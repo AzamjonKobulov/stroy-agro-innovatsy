@@ -687,6 +687,12 @@ section,
 .rounded-2xl{
   border-radius: 1rem;
 }
+.rounded-lg{
+  border-radius: 0.5rem;
+}
+.rounded-xl{
+  border-radius: 0.75rem;
+}
 .rounded-b-20{
   border-bottom-right-radius: 1.25rem;
   border-bottom-left-radius: 1.25rem;
@@ -865,6 +871,14 @@ section,
     --tw-space-y-reverse: 0;
     margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+  }
+
+  .sm\:rounded-20{
+    border-radius: 1.25rem;
+  }
+
+  .sm\:rounded-2xl{
+    border-radius: 1rem;
   }
 
   .sm\:px-\[1\.125rem\]{
