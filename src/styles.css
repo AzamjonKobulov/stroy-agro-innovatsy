@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Forma DJR Cyrilic Variable';
+  src: url('../public/assets/fonts-Regular.eot');
+  src: url('../public/assets/fonts-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('../public/assets/fonts-Regular.woff2') format('woff2'),
+    url('../public/assets/fonts-Regular.woff') format('woff'),
+    url('../public/assets/fonts-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  body {
+    @apply font-manrope;
+  }
+
+  h2 {
+    @apply font-forma text-2xl lg:text-4xl xl:text-5xl xl:leading-[2.9375rem];
+  }
+
+  section,
+  footer {
+    @apply py-8 sm:py-12 lg:py-base -mt-10 sm:-mt-14 lg:-mt-16;
+  }
+}
