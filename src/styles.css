@@ -28,6 +28,6 @@
 
   section,
   footer {
-    @apply py-8 sm:py-12 lg:py-base -mt-10 sm:-mt-14 lg:-mt-16;
+    @apply pt-8 pb-16 sm:pt-12 sm:pb-24 lg:pt-base lg:pb-32 rounded-t-20 lg:rounded-t-30 -mt-10 sm:-mt-14 lg:-mt-16;
   }
 }

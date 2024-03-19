@@ -430,8 +430,10 @@ h2{
 section,
   footer{
   margin-top: -2.5rem;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 
 @media (min-width: 640px){
@@ -440,7 +442,7 @@ section,
   footer{
     margin-top: -3.5rem;
     padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 6rem;
   }
 }
 
@@ -449,8 +451,10 @@ section,
   section,
   footer{
     margin-top: -4rem;
+    border-top-left-radius: 1.875rem;
+    border-top-right-radius: 1.875rem;
     padding-top: 3.75rem;
-    padding-bottom: 3.75rem;
+    padding-bottom: 8rem;
   }
 }
 
@@ -553,6 +557,9 @@ section,
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.fixed{
+  position: fixed;
+}
 .absolute{
   position: absolute;
 }
@@ -567,6 +574,9 @@ section,
 }
 .z-10{
   z-index: 10;
+}
+.z-50{
+  z-index: 50;
 }
 .mx-auto{
   margin-left: auto;
@@ -622,6 +632,9 @@ section,
 }
 .items-start{
   align-items: flex-start;
+}
+.items-end{
+  align-items: flex-end;
 }
 .items-center{
   align-items: center;
@@ -687,19 +700,12 @@ section,
 .rounded-2xl{
   border-radius: 1rem;
 }
-.rounded-lg{
-  border-radius: 0.5rem;
-}
 .rounded-xl{
   border-radius: 0.75rem;
 }
 .rounded-b-20{
   border-bottom-right-radius: 1.25rem;
   border-bottom-left-radius: 1.25rem;
-}
-.rounded-t-20{
-  border-top-left-radius: 1.25rem;
-  border-top-right-radius: 1.25rem;
 }
 .border-b{
   border-bottom-width: 1px;
@@ -759,6 +765,12 @@ section,
 }
 .pt-3\.5{
   padding-top: 0.875rem;
+}
+.pt-20{
+  padding-top: 5rem;
+}
+.pt-16{
+  padding-top: 4rem;
 }
 .text-center{
   text-align: center;
@@ -873,10 +885,6 @@ section,
     margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
   }
 
-  .sm\:rounded-20{
-    border-radius: 1.25rem;
-  }
-
   .sm\:rounded-2xl{
     border-radius: 1rem;
   }
@@ -901,10 +909,6 @@ section,
 
   .md\:max-w-\[40\.4375rem\]{
     max-width: 40.4375rem;
-  }
-
-  .md\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:space-y-8 > :not([hidden]) ~ :not([hidden]){
@@ -983,23 +987,12 @@ section,
     margin-bottom: calc(5rem * var(--tw-space-y-reverse));
   }
 
-  .lg\:space-y-8 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-y-reverse: 0;
-    margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(2rem * var(--tw-space-y-reverse));
-  }
-
   .lg\:rounded-20{
     border-radius: 1.25rem;
   }
 
   .lg\:rounded-30{
     border-radius: 1.875rem;
-  }
-
-  .lg\:rounded-t-30{
-    border-top-left-radius: 1.875rem;
-    border-top-right-radius: 1.875rem;
   }
 
   .lg\:p-6{
