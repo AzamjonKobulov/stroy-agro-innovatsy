@@ -99,27 +99,47 @@
               </p>
             </div>
 
-            <!-- Button -->
-            <button
-              class="h-10 w-10 sm:w-auto sm:h-12 flex items-center justify-center sm:justify-start gap-2.5 bg-white/10 text-white font-semibold rounded-2xl hover:rounded-[3rem] transition-all duration-300 sm:px-[1.125rem]"
-            >
-              <span class="hidden sm:block"> Скачать референс-лист </span>
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+            <div class="flex items-center gap-5">
+              <!-- Button -->
+              <button
+                class="h-10 w-10 sm:w-auto sm:h-12 hidden sm:flex items-center justify-center sm:justify-start gap-2.5 bg-white/10 text-white font-semibold rounded-2xl hover:rounded-[3rem] transition-all duration-300 sm:px-[1.125rem]"
               >
-                <path
-                  d="M16.875 12.2917V16.875H3.125V12.2917M9.99999 12.5V3.125M9.99999 12.5L7.08333 9.58333M9.99999 12.5L12.9167 9.58333"
-                  stroke="white"
+                <span class="hidden sm:block"> Скачать референс-лист </span>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.875 12.2917V16.875H3.125V12.2917M9.99999 12.5V3.125M9.99999 12.5L7.08333 9.58333M9.99999 12.5L12.9167 9.58333"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+
+              <!-- Mobile Menu Button -->
+              <button class="lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
                   stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
           <!-- Links && Contacts -->
           <div
