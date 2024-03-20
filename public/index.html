@@ -8,91 +8,92 @@
   </head>
   <body class="bg-[#1E1E1E]">
     <!-- Header -->
-    <header class="bg-white rounded-b-20 fixed left-0 w-full z-50 top-0 shadow">
+    <header
+      class="header fixed top-0 left-0 w-full z-50 transition-all duration-500"
+    >
       <!-- Navbar -->
-      <nav
-        class="max-w-base mx-auto flex items-center justify-between text-brand-dark py-3 px-5"
-      >
-        <!-- Logo -->
-        <div class="flex items-center gap-3">
-          <img src="./assets/images/icon-logo.svg" alt="Logo" />
-          <p class="font-forma text-xl lg:text-2xl xl:text-[2rem]">
-            СтройАгроИнновации
-          </p>
-        </div>
-
-        <!-- Links -->
-        <ul
-          class="hidden lg:flex items-center gap-6 xl:gap-8 font-medium text-sm xl:text-base"
+      <nav class="primary-nav bg-white rounded-b-20">
+        <div
+          class="max-w-base mx-auto flex items-center justify-between text-brand-dark py-3 px-5"
         >
-          <li>
-            <a
-              href="#"
-              class="hover:text-brand-light-green transition-all duration-200"
-              >О компании</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="hover:text-brand-light-green transition-all duration-200"
-              >Проектируем и строим</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="hover:text-brand-light-green transition-all duration-200"
-              >Технология и материалы</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="hover:text-brand-light-green transition-all duration-200"
-              >Узнать цену</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="hover:text-brand-light-green transition-all duration-200"
-              >Портфолио</a
-            >
-          </li>
-        </ul>
+          <!-- Logo -->
+          <div class="flex items-center gap-3">
+            <img src="./assets/images/icon-logo.svg" alt="Logo" />
+            <p class="font-forma text-xl lg:text-2xl xl:text-[2rem]">
+              СтройАгроИнновации
+            </p>
+          </div>
 
-        <!-- Mobile Menu Button -->
-        <button class="lg:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
+          <!-- Links -->
+          <ul
+            class="hidden lg:flex items-center gap-6 xl:gap-8 font-medium text-sm xl:text-base"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-            />
-          </svg>
-        </button>
-      </nav>
-    </header>
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand-light-green transition-all duration-200"
+                >О компании</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand-light-green transition-all duration-200"
+                >Проектируем и строим</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand-light-green transition-all duration-200"
+                >Технология и материалы</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand-light-green transition-all duration-200"
+                >Узнать цену</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand-light-green transition-all duration-200"
+                >Портфолио</a
+              >
+            </li>
+          </ul>
 
-    <!-- Main Content -->
-    <main class="pt-16">
-      <!-- Hero Section -->
-      <section
-        id="hero"
-        class="bg-brand-primary mt-5 xl:mt-7 pt-3.5 pb-24 lg:pb-32"
+          <!-- Mobile Menu Button -->
+          <button class="lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <div class="black-block hidden lg:block bg-[#1E1E1E] h-10"></div>
+
+      <!-- Secondary Navbar -->
+      <div
+        class="secondary-navbar hidden lg:block bg-brand-primary text-white py-3.5"
       >
-        <div class="max-w-base mx-auto text-white px-5">
-          <!-- Top -->
+        <div class="max-w-base mx-auto px-5">
           <div
-            class="flex items-center justify-between border-b border-white/10 pb-4"
+            class="flex items-center justify-between lg:border-b border-white/10 lg:pb-4"
           >
             <!-- Logo -->
             <div class="flex items-center gap-3">
@@ -104,7 +105,7 @@
 
             <!-- Button -->
             <button
-              class="h-10 w-10 sm:w-auto sm:h-12 flex items-center justify-center sm:justify-start gap-2.5 bg-white/10 text-white font-semibold rounded-2xl hover:rounded-[3rem] transition-all duration-300 sm:px-[1.125rem]"
+              class="btn-download h-10 w-10 sm:w-auto sm:h-12 flex items-center justify-center sm:justify-start gap-2.5 bg-white/10 font-semibold rounded-2xl hover:rounded-[3rem] transition-all duration-300 sm:px-[1.125rem]"
             >
               <span class="hidden sm:block"> Скачать референс-лист </span>
               <svg
@@ -126,7 +127,7 @@
           </div>
           <!-- Links && Contacts -->
           <div
-            class="hidden lg:flex items-start xl:items-center justify-between text-white pt-3"
+            class="hidden lg:flex items-start xl:items-center justify-between pt-3"
           >
             <!-- Links -->
             <ul
@@ -135,35 +136,35 @@
               <li>
                 <a
                   href="#"
-                  class="hover:text-brand-light-green transition-all duration-200"
+                  class="hover:text-brand-light-green hover:transition-all hover:duration-200"
                   >О компании</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="hover:text-brand-light-green transition-all duration-200"
+                  class="hover:text-brand-light-green hover:transition-all hover:duration-200"
                   >Проектируем и строим</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="hover:text-brand-light-green transition-all duration-200"
+                  class="hover:text-brand-light-green hover:transition-all hover:duration-200"
                   >Технология и материалы</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="hover:text-brand-light-green transition-all duration-200"
+                  class="hover:text-brand-light-green hover:transition-all hover:duration-200"
                   >Узнать цену</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="hover:text-brand-light-green transition-all duration-200"
+                  class="hover:text-brand-light-green hover:transition-all hover:duration-200"
                   >Портфолио</a
                 >
               </li>
@@ -179,10 +180,16 @@
                   viewBox="0 0 20 21"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  class="icon-phone"
                 >
                   <path
-                    d="M8.54167 7.16667L7.5 3.625H5.8353H3.12657C3.12552 3.69432 3.125 3.76377 3.125 3.83333C3.125 6.30605 3.78776 8.62398 4.94532 10.6192C6.1313 12.6633 7.83668 14.3687 9.88084 15.5547C11.876 16.7122 14.1939 17.375 16.6667 17.375H16.875V13L13.3333 11.9583L11.8265 13.5279C9.72985 12.4791 8.02088 10.7702 6.97206 8.67349L8.54167 7.16667Z"
-                    stroke="white"
+                    d="M8.54167 7.16667L7.5 3.625H5.8353H3.12657C3.12552
+                  3.69432 3.125 3.76377 3.125 3.83333C3.125 6.30605 3.78776
+                  8.62398 4.94532 10.6192C6.1313 12.6633 7.83668 14.3687 9.88084
+                  15.5547C11.876 16.7122 14.1939 17.375 16.6667
+                  17.375H16.875V13L13.3333 11.9583L11.8265 13.5279C9.72985
+                  12.4791 8.02088 10.7702 6.97206 8.67349L8.54167 7.16667Z"
+                    stroke="currentColor"
                     stroke-width="1.25"
                   />
                 </svg>
@@ -194,12 +201,12 @@
                   width="18"
                   height="15"
                   viewBox="0 0 18 15"
-                  fill="none"
+                  fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     d="M16.7083 1.45831H17.3333V0.833313H16.7083V1.45831ZM16.7083 13.5416V14.1666H17.3333V13.5416H16.7083ZM1.29166 13.5416H0.666664V14.1666H1.29166V13.5416ZM1.29166 1.45831V0.833313H0.666664V1.45831H1.29166ZM9 8.33331L8.60422 8.81704L9 9.14085L9.39577 8.81704L9 8.33331ZM16.0833 1.45831V13.5416H17.3333V1.45831H16.0833ZM16.7083 12.9166H1.29166V14.1666H16.7083V12.9166ZM1.91666 13.5416V1.45831H0.666664V13.5416H1.91666ZM1.29166 2.08331H16.7083V0.833313H1.29166V2.08331ZM9.39577 7.84959L1.89577 1.71323L1.10422 2.68067L8.60422 8.81704L9.39577 7.84959ZM16.1042 1.71323L8.60422 7.84959L9.39577 8.81704L16.8958 2.68067L16.1042 1.71323Z"
-                    fill="white"
+                    fill="currentColor"
                   />
                 </svg>
 
@@ -207,81 +214,93 @@
               </a>
             </div>
           </div>
-          <!-- Main -->
-          <div class="grid lg:grid-cols-2 gap-7 lg:gap-10 relative pt-12">
-            <img
-              src="./assets/images/icon-bg-hero.svg"
-              alt="Background Icon"
-              class="absolute left-0 top-0"
-            />
-            <!-- Left -->
-            <div
-              class="lg:max-w-[39.5625rem] space-y-10 lg:space-y-20 xl:space-y-40"
-            >
-              <!-- Texts -->
-              <div class="text-center lg:text-start space-y-3.5 sm:space-y-5">
-                <h1
-                  class="font-forma text-3xl sm:text-5xl xl:text-[4.375rem] lg:leading-[4.0625rem] tracking-[-2%]"
-                >
-                  Строительство ферм КРС и животноводческих комплексов
-                </h1>
-                <p
-                  class="max-w-2xl lg:max-w-auto mx-auto lg:mx-0 text-sm sm:text-base"
-                >
-                  Производим металлоконструкции и оборудование для ферм, а также
-                  металооконструкции производственных зданий с монтажом
-                </p>
-              </div>
-              <!-- Buttons -->
-              <div
-                class="relative z-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3"
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-16 lg:pt-[10.625rem]">
+      <!-- Hero Section -->
+      <section
+        id="hero"
+        class="bg-brand-primary mt-5 lg:mt-9 xl:mt-7 pb-24 pt-8 lg:pb-32 px-0"
+      >
+        <!-- Main -->
+        <div
+          class="max-w-base mx-auto grid lg:grid-cols-2 gap-7 lg:gap-10 relative text-white pt-8 px-5"
+        >
+          <img
+            src="./assets/images/icon-bg-hero.svg"
+            alt="Background Icon"
+            class="absolute left-0 top-0"
+          />
+          <!-- Left -->
+          <div
+            class="lg:max-w-[39.5625rem] space-y-10 lg:space-y-20 xl:space-y-40"
+          >
+            <!-- Texts -->
+            <div class="text-center lg:text-start space-y-3.5 sm:space-y-5">
+              <h1
+                class="font-forma text-3xl sm:text-5xl xl:text-[4.375rem] lg:leading-[4.0625rem] tracking-[-2%]"
               >
-                <button
-                  class="w-full sm:w-auto h-12 lg:h-14 xl:h-16 flex items-center justify-center bg-white/10 text-white font-semibold rounded-xl sm:rounded-2xl lg:rounded-20 hover:rounded-[4rem] transition-all duration-300 px-4 xl:px-7"
-                >
-                  <span>Рассчитать стоимость</span>
-                </button>
-                <button
-                  class="w-full sm:w-auto h-12 lg:h-14 xl:h-16 flex items-center justify-center sm:justify-start gap-1.5 bg-white text-brand-dark font-semibold rounded-xl sm:rounded-2xl lg:rounded-20 hover:rounded-[4rem] transition-all duration-300 px-4 xl:px-7"
-                >
-                  <span>Запросить смету и цену</span>
-                  <svg
-                    width="20"
-                    height="21"
-                    viewBox="0 0 20 21"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0_49_469)">
-                      <path
-                        d="M11.8685 7.45241L5.54701 7.45242V5.786L14.7135 5.786L14.7135 14.9525H13.0471V8.63093L5.87463 15.8033L4.69612 14.6248L11.8685 7.45241Z"
-                        fill="#0B0B0B"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_49_469">
-                        <rect
-                          width="20"
-                          height="20"
-                          fill="white"
-                          transform="translate(0 0.5)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </button>
-              </div>
+                Строительство ферм КРС и животноводческих комплексов
+              </h1>
+              <p
+                class="max-w-2xl lg:max-w-auto mx-auto lg:mx-0 text-sm sm:text-base"
+              >
+                Производим металлоконструкции и оборудование для ферм, а также
+                металооконструкции производственных зданий с монтажом
+              </p>
             </div>
-            <!-- Right -->
+            <!-- Buttons -->
             <div
-              class="md:max-w-[40.4375rem] mx-auto overflow-hidden rounded-20 lg:rounded-30 lg:mx-0"
+              class="relative z-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3"
             >
-              <img
-                src="./assets/images/img-hero.png"
-                alt="Image"
-                class="w-full h-full object-cover"
-              />
+              <button
+                class="w-full sm:w-auto h-12 lg:h-14 xl:h-16 flex items-center justify-center bg-white/10 font-semibold rounded-xl sm:rounded-2xl lg:rounded-20 hover:rounded-[4rem] transition-all duration-300 px-4 xl:px-7"
+              >
+                <span>Рассчитать стоимость</span>
+              </button>
+              <button
+                class="w-full sm:w-auto h-12 lg:h-14 xl:h-16 flex items-center justify-center sm:justify-start gap-1.5 bg-white text-brand-dark font-semibold rounded-xl sm:rounded-2xl lg:rounded-20 hover:rounded-[4rem] transition-all duration-300 px-4 xl:px-7"
+              >
+                <span>Запросить смету и цену</span>
+                <svg
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_49_469)">
+                    <path
+                      d="M11.8685 7.45241L5.54701 7.45242V5.786L14.7135 5.786L14.7135 14.9525H13.0471V8.63093L5.87463 15.8033L4.69612 14.6248L11.8685 7.45241Z"
+                      fill="#0B0B0B"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_49_469">
+                      <rect
+                        width="20"
+                        height="20"
+                        fill="white"
+                        transform="translate(0 0.5)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
             </div>
+          </div>
+          <!-- Right -->
+          <div
+            class="md:max-w-full mx-auto overflow-hidden rounded-lg sm:rounded-2xl lg:rounded-20 xl:rounded-30 lg:mx-0"
+          >
+            <img
+              src="./assets/images/img-hero.png"
+              alt="Image"
+              class="w-full h-full object-cover"
+            />
           </div>
         </div>
       </section>
@@ -369,7 +388,8 @@
             class="flex flex-col lg:flex-row items-end justify-between text-white text-center lg:text-start space-y-3 lg:space-y-0"
           >
             <h2 class="max-w-4xl lg:max-w-3xl">
-              СтройАгроИнновации — инженерно-производственная компания
+              Проектируем, <br />
+              производим и строим
             </h2>
 
             <!-- Tabs -->
@@ -378,5 +398,7 @@
         </div>
       </section>
     </main>
+
+    <script src="./script.js"></script>
   </body>
 </html>
