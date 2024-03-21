@@ -48,3 +48,9 @@
 .tab-content.active {
   @apply block;
 }
+
+.swiper-button-prev.inactive,
+.swiper-button-next.inactive {
+  opacity: 0.5;
+  pointer-events: none;
+}

@@ -25,6 +25,7 @@ module.exports = {
             100: '#999999',
             200: '#5E5E5E',
             300: '#4B4B4B',
+            400: '#8C8C8C',
           },
         },
       },
@@ -33,6 +34,9 @@ module.exports = {
       },
       padding: {
         base: '3.75rem',
+      },
+      spacing: {
+        100: '6.25rem',
       },
       borderRadius: {
         20: '1.25rem',
