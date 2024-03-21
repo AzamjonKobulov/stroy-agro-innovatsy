@@ -12,7 +12,7 @@
       <nav>
         <!-- Navbar When Scrolling -->
         <div
-          class="nav-on-scroll fixed left-0 top-0 w-full z-50 bg-white rounded-b-20 transition-all duration-500 shadow"
+          class="nav-on-scroll fixed left-0 top-0 w-full z-50 bg-white -translate-y-full rounded-b-20 transition-all duration-500 shadow"
         >
           <div
             class="max-w-base mx-auto flex items-center justify-between text-brand-dark py-3 px-5"
@@ -102,7 +102,7 @@
             <div class="flex items-center gap-5">
               <!-- Button -->
               <button
-                class="h-10 w-10 sm:w-auto sm:h-12 hidden sm:flex items-center justify-center sm:justify-start gap-2.5 bg-white/10 text-white font-semibold rounded-2xl hover:rounded-[3rem] transition-all duration-300 sm:px-[1.125rem]"
+                class="h-10 w-10 sm:w-auto sm:h-12 hidden sm:flex items-center justify-center sm:justify-start gap-2.5 bg-white/10 text-white font-semibold rounded-2xl hover:rounded-[3rem] transition-all duration-500 sm:px-[1.125rem]"
               >
                 <span class="hidden sm:block"> Скачать референс-лист </span>
                 <svg
@@ -266,12 +266,12 @@
                 class="relative z-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3"
               >
                 <button
-                  class="w-full sm:w-auto h-12 lg:h-14 xl:h-16 flex items-center justify-center bg-white/10 text-white font-semibold rounded-xl sm:rounded-2xl lg:rounded-20 hover:rounded-[4rem] transition-all duration-300 px-4 xl:px-7"
+                  class="w-full sm:w-auto h-12 lg:h-14 xl:h-16 flex items-center justify-center bg-white/10 text-white font-semibold rounded-xl sm:rounded-2xl lg:rounded-20 hover:rounded-[4rem] transition-all duration-500 px-4 xl:px-7"
                 >
                   <span>Рассчитать стоимость</span>
                 </button>
                 <button
-                  class="w-full sm:w-auto h-12 lg:h-14 xl:h-16 flex items-center justify-center sm:justify-start gap-1.5 bg-white text-brand-dark font-semibold rounded-xl sm:rounded-2xl lg:rounded-20 hover:rounded-[4rem] transition-all duration-300 px-4 xl:px-7"
+                  class="w-full sm:w-auto h-12 lg:h-14 xl:h-16 flex items-center justify-center sm:justify-start gap-1.5 bg-white text-brand-dark font-semibold rounded-xl sm:rounded-2xl lg:rounded-20 hover:rounded-[4rem] transition-all duration-500 px-4 xl:px-7"
                 >
                   <span>Запросить смету и цену</span>
                   <svg
@@ -395,15 +395,806 @@
         <div class="max-w-base mx-auto">
           <!-- Tabs & Title -->
           <div
-            class="flex flex-col lg:flex-row items-end justify-between text-white text-center lg:text-start space-y-3 lg:space-y-0"
+            class="flex flex-col md:flex-row md:items-end justify-between text-white text-center lg:text-start space-y-5 sm:space-y-3 lg:space-y-0"
           >
-            <h2 class="max-w-4xl lg:max-w-3xl">
+            <h2 class="max-w-4xl lg:max-w-3xl text-start text-white">
               Проектируем, <br />
               производим и строим
             </h2>
 
             <!-- Tabs -->
-            <div class=""></div>
+            <div
+              class="sm:h-14 md:h-16 md:w-fit grid sm:grid-cols-3 md:flex items-center bg-white text-sm sm:text-base lg:text-lg font-semibold rounded-2xl p-1"
+            >
+              <button
+                class="tab-button active h-10 min-w-32 lg:min-w-40 xl:min-w-48 sm:h-full rounded-2xl text-brand-dark px-4 xl:px-6"
+                data-target="tab1"
+              >
+                Телятники и коровники
+              </button>
+              <button
+                class="tab-button h-10 min-w-32 lg:min-w-40 xl:min-w-48 sm:h-full rounded-2xl text-brand-dark px-4 xl:px-6"
+                data-target="tab2"
+              >
+                Птичники
+              </button>
+              <button
+                class="tab-button h-10 min-w-32 lg:min-w-40 xl:min-w-48 sm:h-full rounded-2xl text-brand-dark px-4 xl:px-6"
+                data-target="tab3"
+              >
+                Свинарники
+              </button>
+            </div>
+          </div>
+          <!-- Tabs Contents -->
+          <div
+            class="tabs-content bg-brand-whitish rounded-2xl md:rounded-20 lg:rounded-30 mt-6 md:mt-8 lg:mt-10 p-6 lg:p-8"
+          >
+            <!-- Tab content 1 -->
+            <div
+              id="tab1"
+              class="tab-content active space-y-12 lg:space-y-[3.75rem]"
+            >
+              <!-- Top -->
+              <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 xl:gap-24">
+                <!-- Texts -->
+                <div class="space-y-4 md:space-y-5 lg:space-y-6">
+                  <h3>Телятники и коровники</h3>
+                  <div
+                    class="space-y-4 md:space-y-5 lg:space-y-6 text-sm lg:text-base text-brand-gray-400 font-medium"
+                  >
+                    <p>
+                      Наша компания предлагает услуги по проектированию и
+                      строительству современных телятников и коровников из
+                      металлоконструкций.
+                    </p>
+                    <p>
+                      Мы специализируемся на создании индивидуальных проектов,
+                      учитывающих потребности наших клиентов и особенности
+                      содержания скота.
+                    </p>
+                    <p>
+                      Металлические конструкции обеспечивают прочность,
+                      долговечность и устойчивость к различным погодным
+                      условиям, а также позволяют создать оптимальные условия
+                      для содержания животных.
+                    </p>
+                    <p>
+                      Наши специалисты гарантируют высокое качество
+                      строительства, соблюдение сроков и предоставление
+                      комплексных решений для вашего животноводческого
+                      предприятия.
+                    </p>
+                    <p>
+                      Обращайтесь к нам, чтобы создать современные и эффективные
+                      условия для развития вашего животноводческого бизнеса.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="overflow-hidden rounded-2xl md:rounded-20 lg:rounded-30"
+                >
+                  <img
+                    src="./assets/images/img-factory.png"
+                    alt="Image"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+
+              <!-- Bottom -->
+              <div class="space-y-5 lg:space-y-6">
+                <h3>Готовые решения ферм для КРС</h3>
+                <div
+                  class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6"
+                >
+                  <!-- Factory Box -->
+                  <div
+                    class="space-y-5 lg:space-y-6 bg-white rounded-2xl lg:rounded-20 drop-shadow-box p-4"
+                  >
+                    <div class="h-52 rounded-2xl lg:rounded-20 overflow-hidden">
+                      <img
+                        src="./assets/images/img-factory-1.png"
+                        alt="Factory Image"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div class="space-y-7 lg:space-y-10">
+                      <!-- Texts -->
+                      <div class="space-y-2">
+                        <h4
+                          class="font-forma text-lg sm:text-xl lg:text-2xl text-brand-dark"
+                        >
+                          Ферма на 50 голов
+                        </h4>
+                        <p
+                          class="text-sm lg:text-base font-medium text-brand-gray-200"
+                        >
+                          Наша компания предлагает услуги по проектированию и
+                          строительству современных телятников и коровников из
+                          металлоконст
+                        </p>
+                      </div>
+                      <!-- Cost -->
+                      <div class="flex items-center justify-between">
+                        <p
+                          class="text-xl lg:text-2xl font-forma text-brand-dark"
+                        >
+                          от 7 500₽
+                        </p>
+                        <a
+                          href="#"
+                          class="h-10 lg:h-12 xl:h-14 flex items-center gap-1.5 bg-brand-primary text-white font-semibold text-sm lg:text-base rounded-2xl lg:rounded-20 hover:rounded-[3.75rem] transition-all duration-500 px-4 lg:px-5 xl:px-6"
+                          ><span class="sm:hidden md:block">
+                            Получить смету
+                          </span>
+                          <svg
+                            width="20"
+                            height="21"
+                            viewBox="0 0 20 21"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_2205_299)">
+                              <path
+                                d="M11.869 7.45241L5.5475 7.45242V5.786L14.714 5.786L14.714 14.9525H13.0475V8.63093L5.87512 15.8033L4.69661 14.6248L11.869 7.45241Z"
+                                fill="white"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2205_299">
+                                <rect
+                                  width="20"
+                                  height="20"
+                                  fill="white"
+                                  transform="translate(0 0.5)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Factory Box -->
+                  <div
+                    class="space-y-5 lg:space-y-6 bg-white rounded-2xl lg:rounded-20 drop-shadow-box p-4"
+                  >
+                    <div class="h-52 rounded-2xl lg:rounded-20 overflow-hidden">
+                      <img
+                        src="./assets/images/img-factory-2.png"
+                        alt="Factory Image"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div class="space-y-7 lg:space-y-10">
+                      <!-- Texts -->
+                      <div class="space-y-2">
+                        <h4
+                          class="font-forma text-lg sm:text-xl lg:text-2xl text-brand-dark"
+                        >
+                          Ферма на 100 голов
+                        </h4>
+                        <p
+                          class="text-sm lg:text-base font-medium text-brand-gray-200"
+                        >
+                          Наша компания предлагает услуги по проектированию и
+                          строительству современных телятников и коровников из
+                          металлоконст
+                        </p>
+                      </div>
+                      <!-- Cost -->
+                      <div class="flex items-center justify-between">
+                        <p
+                          class="text-xl lg:text-2xl font-forma text-brand-dark"
+                        >
+                          от 12 500₽
+                        </p>
+                        <a
+                          href="#"
+                          class="h-10 lg:h-12 xl:h-14 flex items-center gap-1.5 bg-brand-primary text-white font-semibold text-sm lg:text-base rounded-2xl lg:rounded-20 hover:rounded-[3.75rem] transition-all duration-500 px-4 lg:px-5 xl:px-6"
+                          ><span class="sm:hidden md:block">
+                            Получить смету
+                          </span>
+                          <svg
+                            width="20"
+                            height="21"
+                            viewBox="0 0 20 21"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_2205_299)">
+                              <path
+                                d="M11.869 7.45241L5.5475 7.45242V5.786L14.714 5.786L14.714 14.9525H13.0475V8.63093L5.87512 15.8033L4.69661 14.6248L11.869 7.45241Z"
+                                fill="white"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2205_299">
+                                <rect
+                                  width="20"
+                                  height="20"
+                                  fill="white"
+                                  transform="translate(0 0.5)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Factory Box -->
+                  <div
+                    class="space-y-5 lg:space-y-6 bg-white rounded-2xl lg:rounded-20 drop-shadow-box p-4"
+                  >
+                    <div class="h-52 rounded-2xl lg:rounded-20 overflow-hidden">
+                      <img
+                        src="./assets/images/img-factory-3.png"
+                        alt="Factory Image"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div class="space-y-7 lg:space-y-10">
+                      <!-- Texts -->
+                      <div class="space-y-2">
+                        <h4
+                          class="font-forma text-lg sm:text-xl lg:text-2xl text-brand-dark"
+                        >
+                          Ферма на 200 голов
+                        </h4>
+                        <p
+                          class="text-sm lg:text-base font-medium text-brand-gray-200"
+                        >
+                          Наша компания предлагает услуги по проектированию и
+                          строительству современных телятников и коровников из
+                          металлоконст
+                        </p>
+                      </div>
+                      <!-- Cost -->
+                      <div class="flex items-center justify-between">
+                        <p
+                          class="text-xl lg:text-2xl font-forma text-brand-dark"
+                        >
+                          от 20 500₽
+                        </p>
+                        <a
+                          href="#"
+                          class="h-10 lg:h-12 xl:h-14 flex items-center gap-1.5 bg-brand-primary text-white font-semibold text-sm lg:text-base rounded-2xl lg:rounded-20 hover:rounded-[3.75rem] transition-all duration-500 px-4 lg:px-5 xl:px-6"
+                          ><span class="sm:hidden md:block">
+                            Получить смету
+                          </span>
+                          <svg
+                            width="20"
+                            height="21"
+                            viewBox="0 0 20 21"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_2205_299)">
+                              <path
+                                d="M11.869 7.45241L5.5475 7.45242V5.786L14.714 5.786L14.714 14.9525H13.0475V8.63093L5.87512 15.8033L4.69661 14.6248L11.869 7.45241Z"
+                                fill="white"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2205_299">
+                                <rect
+                                  width="20"
+                                  height="20"
+                                  fill="white"
+                                  transform="translate(0 0.5)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tab content 2 -->
+            <div id="tab2" class="tab-content space-y-12 lg:space-y-[3.75rem]">
+              <!-- Top -->
+              <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 xl:gap-24">
+                <!-- Texts -->
+                <div class="space-y-4 md:space-y-5 lg:space-y-6">
+                  <h3>Телятники и коровники</h3>
+                  <div
+                    class="space-y-4 md:space-y-5 lg:space-y-6 text-sm lg:text-base text-brand-gray-400 font-medium"
+                  >
+                    <p>
+                      Наша компания предлагает услуги по проектированию и
+                      строительству современных телятников и коровников из
+                      металлоконструкций.
+                    </p>
+                    <p>
+                      Мы специализируемся на создании индивидуальных проектов,
+                      учитывающих потребности наших клиентов и особенности
+                      содержания скота.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="overflow-hidden rounded-2xl md:rounded-20 lg:rounded-30"
+                >
+                  <img
+                    src="./assets/images/img-factory.png"
+                    alt="Image"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+
+              <!-- Bottom -->
+              <div class="space-y-5 lg:space-y-6">
+                <h3>Готовые решения ферм для КРС</h3>
+                <div
+                  class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6"
+                >
+                  <!-- Factory Box -->
+                  <div
+                    class="space-y-5 lg:space-y-6 bg-white rounded-2xl lg:rounded-20 drop-shadow-box p-4"
+                  >
+                    <div class="h-52 rounded-2xl lg:rounded-20 overflow-hidden">
+                      <img
+                        src="./assets/images/img-factory-1.png"
+                        alt="Factory Image"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div class="space-y-7 lg:space-y-10">
+                      <!-- Texts -->
+                      <div class="space-y-2">
+                        <h4
+                          class="font-forma text-lg sm:text-xl lg:text-2xl text-brand-dark"
+                        >
+                          Ферма на 50 голов
+                        </h4>
+                        <p
+                          class="text-sm lg:text-base font-medium text-brand-gray-200"
+                        >
+                          Наша компания предлагает услуги по проектированию и
+                          строительству современных телятников и коровников из
+                          металлоконст
+                        </p>
+                      </div>
+                      <!-- Cost -->
+                      <div class="flex items-center justify-between">
+                        <p
+                          class="text-xl lg:text-2xl font-forma text-brand-dark"
+                        >
+                          от 7 500₽
+                        </p>
+                        <a
+                          href="#"
+                          class="h-10 lg:h-12 xl:h-14 flex items-center gap-1.5 bg-brand-primary text-white font-semibold text-sm lg:text-base rounded-2xl lg:rounded-20 hover:rounded-[3.75rem] transition-all duration-500 px-4 lg:px-5 xl:px-6"
+                          ><span class="sm:hidden md:block">
+                            Получить смету
+                          </span>
+                          <svg
+                            width="20"
+                            height="21"
+                            viewBox="0 0 20 21"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_2205_299)">
+                              <path
+                                d="M11.869 7.45241L5.5475 7.45242V5.786L14.714 5.786L14.714 14.9525H13.0475V8.63093L5.87512 15.8033L4.69661 14.6248L11.869 7.45241Z"
+                                fill="white"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2205_299">
+                                <rect
+                                  width="20"
+                                  height="20"
+                                  fill="white"
+                                  transform="translate(0 0.5)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Factory Box -->
+                  <div
+                    class="space-y-5 lg:space-y-6 bg-white rounded-2xl lg:rounded-20 drop-shadow-box p-4"
+                  >
+                    <div class="h-52 rounded-2xl lg:rounded-20 overflow-hidden">
+                      <img
+                        src="./assets/images/img-factory-3.png"
+                        alt="Factory Image"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div class="space-y-7 lg:space-y-10">
+                      <!-- Texts -->
+                      <div class="space-y-2">
+                        <h4
+                          class="font-forma text-lg sm:text-xl lg:text-2xl text-brand-dark"
+                        >
+                          Ферма на 200 голов
+                        </h4>
+                        <p
+                          class="text-sm lg:text-base font-medium text-brand-gray-200"
+                        >
+                          Наша компания предлагает услуги по проектированию и
+                          строительству современных телятников и коровников из
+                          металлоконст
+                        </p>
+                      </div>
+                      <!-- Cost -->
+                      <div class="flex items-center justify-between">
+                        <p
+                          class="text-xl lg:text-2xl font-forma text-brand-dark"
+                        >
+                          от 20 500₽
+                        </p>
+                        <a
+                          href="#"
+                          class="h-10 lg:h-12 xl:h-14 flex items-center gap-1.5 bg-brand-primary text-white font-semibold text-sm lg:text-base rounded-2xl lg:rounded-20 hover:rounded-[3.75rem] transition-all duration-500 px-4 lg:px-5 xl:px-6"
+                          ><span class="sm:hidden md:block">
+                            Получить смету
+                          </span>
+                          <svg
+                            width="20"
+                            height="21"
+                            viewBox="0 0 20 21"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_2205_299)">
+                              <path
+                                d="M11.869 7.45241L5.5475 7.45242V5.786L14.714 5.786L14.714 14.9525H13.0475V8.63093L5.87512 15.8033L4.69661 14.6248L11.869 7.45241Z"
+                                fill="white"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2205_299">
+                                <rect
+                                  width="20"
+                                  height="20"
+                                  fill="white"
+                                  transform="translate(0 0.5)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Factory Box -->
+                  <div
+                    class="space-y-5 lg:space-y-6 bg-white rounded-2xl lg:rounded-20 drop-shadow-box p-4"
+                  >
+                    <div class="h-52 rounded-2xl lg:rounded-20 overflow-hidden">
+                      <img
+                        src="./assets/images/img-factory-2.png"
+                        alt="Factory Image"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div class="space-y-7 lg:space-y-10">
+                      <!-- Texts -->
+                      <div class="space-y-2">
+                        <h4
+                          class="font-forma text-lg sm:text-xl lg:text-2xl text-brand-dark"
+                        >
+                          Ферма на 100 голов
+                        </h4>
+                        <p
+                          class="text-sm lg:text-base font-medium text-brand-gray-200"
+                        >
+                          Наша компания предлагает услуги по проектированию и
+                          строительству современных телятников и коровников из
+                          металлоконст
+                        </p>
+                      </div>
+                      <!-- Cost -->
+                      <div class="flex items-center justify-between">
+                        <p
+                          class="text-xl lg:text-2xl font-forma text-brand-dark"
+                        >
+                          от 12 500₽
+                        </p>
+                        <a
+                          href="#"
+                          class="h-10 lg:h-12 xl:h-14 flex items-center gap-1.5 bg-brand-primary text-white font-semibold text-sm lg:text-base rounded-2xl lg:rounded-20 hover:rounded-[3.75rem] transition-all duration-500 px-4 lg:px-5 xl:px-6"
+                          ><span class="sm:hidden md:block">
+                            Получить смету
+                          </span>
+                          <svg
+                            width="20"
+                            height="21"
+                            viewBox="0 0 20 21"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_2205_299)">
+                              <path
+                                d="M11.869 7.45241L5.5475 7.45242V5.786L14.714 5.786L14.714 14.9525H13.0475V8.63093L5.87512 15.8033L4.69661 14.6248L11.869 7.45241Z"
+                                fill="white"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2205_299">
+                                <rect
+                                  width="20"
+                                  height="20"
+                                  fill="white"
+                                  transform="translate(0 0.5)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tab content 3 -->
+            <div id="tab3" class="tab-content space-y-12 lg:space-y-[3.75rem]">
+              <!-- Top -->
+              <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 xl:gap-24">
+                <!-- Texts -->
+                <div class="space-y-4 md:space-y-5 lg:space-y-6">
+                  <h3>Телятники и коровники</h3>
+                  <div
+                    class="space-y-4 md:space-y-5 lg:space-y-6 text-sm lg:text-base text-brand-gray-400 font-medium"
+                  >
+                    <p>
+                      Наша компания предлагает услуги по проектированию и
+                      строительству современных телятников и коровников из
+                      металлоконструкций.
+                    </p>
+                    <p>
+                      Мы специализируемся на создании индивидуальных проектов,
+                      учитывающих потребности наших клиентов и особенности
+                      содержания скота.
+                    </p>
+                    <p>
+                      Металлические конструкции обеспечивают прочность,
+                      долговечность и устойчивость к различным погодным
+                      условиям, а также позволяют создать оптимальные условия
+                      для содержания животных.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="overflow-hidden rounded-2xl md:rounded-20 lg:rounded-30"
+                >
+                  <img
+                    src="./assets/images/img-factory.png"
+                    alt="Image"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+
+              <!-- Bottom -->
+              <div class="space-y-5 lg:space-y-6">
+                <h3>Готовые решения ферм для КРС</h3>
+                <div
+                  class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6"
+                >
+                  <!-- Factory Box -->
+                  <div
+                    class="space-y-5 lg:space-y-6 bg-white rounded-2xl lg:rounded-20 drop-shadow-box p-4"
+                  >
+                    <div class="h-52 rounded-2xl lg:rounded-20 overflow-hidden">
+                      <img
+                        src="./assets/images/img-factory-2.png"
+                        alt="Factory Image"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div class="space-y-7 lg:space-y-10">
+                      <!-- Texts -->
+                      <div class="space-y-2">
+                        <h4
+                          class="font-forma text-lg sm:text-xl lg:text-2xl text-brand-dark"
+                        >
+                          Ферма на 100 голов
+                        </h4>
+                        <p
+                          class="text-sm lg:text-base font-medium text-brand-gray-200"
+                        >
+                          Наша компания предлагает услуги по проектированию и
+                          строительству современных телятников и коровников из
+                          металлоконст
+                        </p>
+                      </div>
+                      <!-- Cost -->
+                      <div class="flex items-center justify-between">
+                        <p
+                          class="text-xl lg:text-2xl font-forma text-brand-dark"
+                        >
+                          от 12 500₽
+                        </p>
+                        <a
+                          href="#"
+                          class="h-10 lg:h-12 xl:h-14 flex items-center gap-1.5 bg-brand-primary text-white font-semibold text-sm lg:text-base rounded-2xl lg:rounded-20 hover:rounded-[3.75rem] transition-all duration-500 px-4 lg:px-5 xl:px-6"
+                          ><span class="sm:hidden md:block">
+                            Получить смету
+                          </span>
+                          <svg
+                            width="20"
+                            height="21"
+                            viewBox="0 0 20 21"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_2205_299)">
+                              <path
+                                d="M11.869 7.45241L5.5475 7.45242V5.786L14.714 5.786L14.714 14.9525H13.0475V8.63093L5.87512 15.8033L4.69661 14.6248L11.869 7.45241Z"
+                                fill="white"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2205_299">
+                                <rect
+                                  width="20"
+                                  height="20"
+                                  fill="white"
+                                  transform="translate(0 0.5)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Factory Box -->
+                  <div
+                    class="space-y-5 lg:space-y-6 bg-white rounded-2xl lg:rounded-20 drop-shadow-box p-4"
+                  >
+                    <div class="h-52 rounded-2xl lg:rounded-20 overflow-hidden">
+                      <img
+                        src="./assets/images/img-factory-1.png"
+                        alt="Factory Image"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div class="space-y-7 lg:space-y-10">
+                      <!-- Texts -->
+                      <div class="space-y-2">
+                        <h4
+                          class="font-forma text-lg sm:text-xl lg:text-2xl text-brand-dark"
+                        >
+                          Ферма на 50 голов
+                        </h4>
+                        <p
+                          class="text-sm lg:text-base font-medium text-brand-gray-200"
+                        >
+                          Наша компания предлагает услуги по проектированию и
+                          строительству современных телятников и коровников из
+                          металлоконст
+                        </p>
+                      </div>
+                      <!-- Cost -->
+                      <div class="flex items-center justify-between">
+                        <p
+                          class="text-xl lg:text-2xl font-forma text-brand-dark"
+                        >
+                          от 7 500₽
+                        </p>
+                        <a
+                          href="#"
+                          class="h-10 lg:h-12 xl:h-14 flex items-center gap-1.5 bg-brand-primary text-white font-semibold text-sm lg:text-base rounded-2xl lg:rounded-20 hover:rounded-[3.75rem] transition-all duration-500 px-4 lg:px-5 xl:px-6"
+                          ><span class="sm:hidden md:block">
+                            Получить смету
+                          </span>
+                          <svg
+                            width="20"
+                            height="21"
+                            viewBox="0 0 20 21"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_2205_299)">
+                              <path
+                                d="M11.869 7.45241L5.5475 7.45242V5.786L14.714 5.786L14.714 14.9525H13.0475V8.63093L5.87512 15.8033L4.69661 14.6248L11.869 7.45241Z"
+                                fill="white"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2205_299">
+                                <rect
+                                  width="20"
+                                  height="20"
+                                  fill="white"
+                                  transform="translate(0 0.5)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Factory Box -->
+                  <div
+                    class="space-y-5 lg:space-y-6 bg-white rounded-2xl lg:rounded-20 drop-shadow-box p-4"
+                  >
+                    <div class="h-52 rounded-2xl lg:rounded-20 overflow-hidden">
+                      <img
+                        src="./assets/images/img-factory-3.png"
+                        alt="Factory Image"
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div class="space-y-7 lg:space-y-10">
+                      <!-- Texts -->
+                      <div class="space-y-2">
+                        <h4
+                          class="font-forma text-lg sm:text-xl lg:text-2xl text-brand-dark"
+                        >
+                          Ферма на 200 голов
+                        </h4>
+                        <p
+                          class="text-sm lg:text-base font-medium text-brand-gray-200"
+                        >
+                          Наша компания предлагает услуги по проектированию и
+                          строительству современных телятников и коровников из
+                          металлоконст
+                        </p>
+                      </div>
+                      <!-- Cost -->
+                      <div class="flex items-center justify-between">
+                        <p
+                          class="text-xl lg:text-2xl font-forma text-brand-dark"
+                        >
+                          от 20 500₽
+                        </p>
+                        <a
+                          href="#"
+                          class="h-10 lg:h-12 xl:h-14 flex items-center gap-1.5 bg-brand-primary text-white font-semibold text-sm lg:text-base rounded-2xl lg:rounded-20 hover:rounded-[3.75rem] transition-all duration-500 px-4 lg:px-5 xl:px-6"
+                          ><span class="sm:hidden md:block">
+                            Получить смету
+                          </span>
+                          <svg
+                            width="20"
+                            height="21"
+                            viewBox="0 0 20 21"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_2205_299)">
+                              <path
+                                d="M11.869 7.45241L5.5475 7.45242V5.786L14.714 5.786L14.714 14.9525H13.0475V8.63093L5.87512 15.8033L4.69661 14.6248L11.869 7.45241Z"
+                                fill="white"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2205_299">
+                                <rect
+                                  width="20"
+                                  height="20"
+                                  fill="white"
+                                  transform="translate(0 0.5)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

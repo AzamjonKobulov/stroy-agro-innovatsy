@@ -38,6 +38,9 @@ module.exports = {
         20: '1.25rem',
         30: '1.875rem',
       },
+      dropShadow: {
+        box: '0px 4px 20px 0px #0000000D',
+      },
     },
   },
   plugins: [],
