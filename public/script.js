@@ -211,15 +211,6 @@ const mobileMenuBtn = document.querySelector('#mobileMenuBtn');
 const toggleMobileMenu = () => {
   mobileMenu.classList.toggle('-translate-y-full');
   document.body.classList.toggle('overflow-hidden');
-
-  // const isOpen = !mobileMenu.classList.contains('-translate-y-full');
-  // document.querySelectorAll('.menuText, .hamburger').forEach((element) => {
-  //   element.classList.toggle('hidden', isOpen);
-  // });
-  // document.querySelectorAll('.closeMenuText, .close').forEach((element) => {
-  //   element.classList.toggle('hidden', !isOpen);
-  // });
-  // console.log('click');
 };
 
 mobileMenuBtn.addEventListener('click', toggleMobileMenu);
