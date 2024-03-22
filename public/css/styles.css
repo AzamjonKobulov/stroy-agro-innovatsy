@@ -657,20 +657,17 @@ section,
 .h-14{
   height: 3.5rem;
 }
+.h-4{
+  height: 1rem;
+}
 .h-52{
   height: 13rem;
 }
 .h-6{
   height: 1.5rem;
 }
-.h-\[43\.75rem\]{
-  height: 43.75rem;
-}
 .h-full{
   height: 100%;
-}
-.h-4{
-  height: 1rem;
 }
 .max-h-56{
   max-height: 14rem;
@@ -684,14 +681,14 @@ section,
 .w-11{
   width: 2.75rem;
 }
+.w-4{
+  width: 1rem;
+}
 .w-6{
   width: 1.5rem;
 }
 .w-full{
   width: 100%;
-}
-.w-4{
-  width: 1rem;
 }
 .min-w-32{
   min-width: 8rem;
@@ -936,11 +933,11 @@ section,
 .p-4{
   padding: 1rem;
 }
-.p-6{
-  padding: 1.5rem;
-}
 .p-5{
   padding: 1.25rem;
+}
+.p-6{
+  padding: 1.5rem;
 }
 .px-4{
   padding-left: 1rem;
@@ -1032,12 +1029,6 @@ section,
 }
 .font-semibold{
   font-weight: 600;
-}
-.leading-5{
-  line-height: 1.25rem;
-}
-.leading-3{
-  line-height: .75rem;
 }
 .tracking-\[-2\%\]{
   letter-spacing: -2%;
@@ -1211,10 +1202,6 @@ input[type='radio']:checked + label + svg{
 
 @media (min-width: 640px){
 
-  .sm\:col-span-1{
-    grid-column: span 1 / span 1;
-  }
-
   .sm\:block{
     display: block;
   }
@@ -1235,20 +1222,20 @@ input[type='radio']:checked + label + svg{
     height: 3.5rem;
   }
 
-  .sm\:h-full{
-    height: 100%;
-  }
-
   .sm\:h-6{
     height: 1.5rem;
   }
 
-  .sm\:w-auto{
-    width: auto;
+  .sm\:h-full{
+    height: 100%;
   }
 
   .sm\:w-6{
     width: 1.5rem;
+  }
+
+  .sm\:w-auto{
+    width: auto;
   }
 
   .sm\:grid-cols-2{
