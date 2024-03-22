@@ -1055,6 +1055,9 @@ section,
 .fill-brand-primary{
   fill: #1F5D46;
 }
+.stroke-brand-primary{
+  stroke: #1F5D46;
+}
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
