@@ -9,12 +9,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Stroy Agro Innovations</title>
   </head>
   <body>
     <!-- Header -->
     <header class="bg-brand-primary">
-      <nav>
+      <nav data-aos="fade-down">
         <!-- Navbar When Scrolling -->
         <div
           class="nav-on-scroll fixed left-0 top-0 w-full z-50 bg-white -translate-y-full rounded-b-20 transition-all duration-500 shadow"
@@ -250,6 +251,7 @@
             />
             <!-- Left -->
             <div
+              data-aos="fade-right"
               class="lg:max-w-[39.5625rem] space-y-10 lg:space-y-20 xl:space-y-40"
             >
               <!-- Texts -->
@@ -308,6 +310,7 @@
             </div>
             <!-- Right -->
             <div
+              data-aos="fade-left"
               class="md:max-w-[40.4375rem] mx-auto overflow-hidden rounded-20 lg:rounded-30 lg:mx-0"
             >
               <img
@@ -327,10 +330,16 @@
           <div
             class="flex flex-col lg:flex-row items-center justify-between lg:text-start space-y-3 lg:space-y-0"
           >
-            <h2 class="max-w-4xl lg:max-w-3xl text-brand-dark">
+            <h2
+              class="max-w-4xl lg:max-w-3xl text-brand-dark"
+              data-aos="fade-right"
+            >
               СтройАгроИнновации — инженерно-производственная компания
             </h2>
-            <p class="max-w-2xl lg:max-w-md text-sm lg:text-base">
+            <p
+              class="max-w-2xl lg:max-w-md text-sm lg:text-base"
+              data-aos="fade-left"
+            >
               Наша компания специализируется на комплексном проектировании,
               производстве и строительстве ферм для содержания крупного рогатого
               скота (КРС) и животноводческих комплексов.
@@ -342,6 +351,8 @@
             <!-- Box 1 -->
             <div
               class="space-y-6 md:space-y-8 lg:space-y-10 bg-brand-whitish rounded-2xl lg:rounded-20 p-4 lg:p-6"
+              data-aos="fade-down"
+              data-aos-delay="200"
             >
               <img src="./assets/images/icon-builder.svg" alt="Icon" />
 
@@ -361,6 +372,8 @@
             <!-- Box 1 -->
             <div
               class="space-y-6 md:space-y-8 lg:space-y-10 bg-brand-whitish rounded-2xl lg:rounded-20 p-4 lg:p-6"
+              data-aos="fade-down"
+              data-aos-delay="400"
             >
               <img src="./assets/images/icon-list.svg" alt="Icon" />
 
@@ -378,6 +391,8 @@
             <!-- Box 1 -->
             <div
               class="space-y-6 md:space-y-8 lg:space-y-10 bg-brand-whitish rounded-2xl lg:rounded-20 p-4 lg:p-6"
+              data-aos="fade-down"
+              data-aos-delay="600"
             >
               <img src="./assets/images/icon-home.svg" alt="Icon" />
 
@@ -402,30 +417,40 @@
           <div
             class="flex flex-col md:flex-row md:items-end justify-between text-white text-center lg:text-start space-y-5 sm:space-y-3 lg:space-y-0"
           >
-            <h2 class="max-w-4xl lg:max-w-3xl text-start text-white">
+            <h2
+              class="max-w-4xl lg:max-w-3xl text-start text-white"
+              data-aos="fade-right"
+            >
               Проектируем, <br />
               производим и строим
             </h2>
 
             <!-- Tabs -->
             <div
+              data-aos="fade-left"
               class="sm:h-14 md:h-16 md:w-fit grid sm:grid-cols-3 md:flex items-center bg-white text-sm sm:text-base lg:text-lg font-semibold rounded-2xl p-1"
             >
               <button
                 class="tab-button active h-10 min-w-32 lg:min-w-40 xl:min-w-48 sm:h-full rounded-2xl text-brand-dark px-4 xl:px-6"
                 data-target="tab1"
+                data-aos="fade-left"
+                data-aos-delay="200"
               >
                 Телятники и коровники
               </button>
               <button
                 class="tab-button h-10 min-w-32 lg:min-w-40 xl:min-w-48 sm:h-full rounded-2xl text-brand-dark px-4 xl:px-6"
                 data-target="tab2"
+                data-aos="fade-left"
+                data-aos-delay="200"
               >
                 Птичники
               </button>
               <button
                 class="tab-button h-10 min-w-32 lg:min-w-40 xl:min-w-48 sm:h-full rounded-2xl text-brand-dark px-4 xl:px-6"
                 data-target="tab3"
+                data-aos="fade-left"
+                data-aos-delay="200"
               >
                 Свинарники
               </button>
@@ -434,6 +459,7 @@
           <!-- Tabs Contents -->
           <div
             class="tabs-content bg-brand-whitish rounded-2xl md:rounded-20 lg:rounded-30 mt-6 md:mt-8 lg:mt-10 p-6 lg:p-8"
+            data-aos="zoom-in"
           >
             <!-- Tab content 1 -->
             <div
@@ -1173,12 +1199,12 @@
         <div class="max-w-base mx-auto space-y-5 lg:space-y-6 px-5">
           <!-- Text & Slider Buttons -->
           <div class="flex items-center justify-between space-y-3 lg:space-y-0">
-            <h2>
+            <h2 data-aos="fade-right">
               Используем проверенные <br />
               материалы и решения
             </h2>
             <!-- Slider Buttons -->
-            <div class="hidden sm:flex items-center">
+            <div data-aos="fade-left" class="hidden sm:flex items-center">
               <!-- Prev Button -->
               <button class="prev w-11 h-11 grid place-content-center">
                 <svg
@@ -1223,7 +1249,11 @@
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <!-- Slide -->
-              <div class="swiper-slide">
+              <div
+                data-aos="fade-up-right"
+                data-aos-delay="200"
+                class="swiper-slide"
+              >
                 <div class="space-y-5 lg:space-y-6 p-6">
                   <!-- Top -->
                   <div class="flex items-center justify-between">
@@ -1254,7 +1284,11 @@
                 </div>
               </div>
               <!-- Slide -->
-              <div class="swiper-slide">
+              <div
+                data-aos="fade-up-right"
+                data-aos-delay="400"
+                class="swiper-slide"
+              >
                 <div class="space-y-5 lg:space-y-6 p-6">
                   <!-- Top -->
                   <div class="flex items-center justify-between">
@@ -1283,7 +1317,11 @@
                 </div>
               </div>
               <!-- Slide -->
-              <div class="swiper-slide">
+              <div
+                data-aos="fade-up-right"
+                data-aos-delay="600"
+                class="swiper-slide"
+              >
                 <div class="space-y-5 lg:space-y-6 p-6">
                   <!-- Top -->
                   <div class="flex items-center justify-between">
@@ -1312,7 +1350,11 @@
                 </div>
               </div>
               <!-- Slide -->
-              <div class="swiper-slide">
+              <div
+                data-aos="fade-up-right"
+                data-aos-delay="800"
+                class="swiper-slide"
+              >
                 <div class="space-y-5 lg:space-y-6 p-6">
                   <!-- Top -->
                   <div class="flex items-center justify-between">
@@ -1341,7 +1383,11 @@
                 </div>
               </div>
               <!-- Slide -->
-              <div class="swiper-slide">
+              <div
+                data-aos="fade-up-right"
+                data-aos-delay="1000"
+                class="swiper-slide"
+              >
                 <div class="space-y-5 lg:space-y-6 p-6">
                   <!-- Top -->
                   <div class="flex items-center justify-between">
@@ -1372,7 +1418,11 @@
                 </div>
               </div>
               <!-- Slide -->
-              <div class="swiper-slide">
+              <div
+                data-aos="fade-up-right"
+                data-aos-delay="1200"
+                class="swiper-slide"
+              >
                 <div class="space-y-5 lg:space-y-6 p-6">
                   <!-- Top -->
                   <div class="flex items-center justify-between">
@@ -1403,7 +1453,10 @@
             </div>
           </div>
           <!-- Slider Buttons -->
-          <div class="flex sm:hidden justify-center items-center">
+          <div
+            data-aos="fade-up"
+            class="flex sm:hidden justify-center items-center"
+          >
             <!-- Prev Button -->
             <button class="prev w-11 h-11 grid place-content-center">
               <svg
@@ -1453,12 +1506,13 @@
         <div
           class="max-w-base mx-auto relative z-10 flex flex-col lg:flex-row justify-center lg:justify-between gap-7 px-5"
         >
-          <h2 class="max-w-xl text-white">
+          <h2 class="max-w-xl text-white" data-aos="fade-right">
             Рассчитайте стоимость индивидуального строительства ферм
           </h2>
 
           <!-- Form -->
           <div
+            data-aos="fade-left"
             class="max-w-[40.875rem] min-h-max mx-auto lg:mx-0 w-full bg-white font-forma rounded-2xl lg:rounded-20 xl:rounded-30 overflow-hidden p-5 xl:p-8"
           >
             <form
@@ -1884,7 +1938,7 @@
       <!-- Quality Section -->
       <section id="quality" class="relative z-10 bg-white">
         <div class="max-w-base mx-auto px-5">
-          <h2>
+          <h2 data-aos="fade-right">
             Нас выбирают <br />
             за подход и качество
           </h2>
@@ -1893,6 +1947,8 @@
           <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-4 mt-8">
             <!-- Block -->
             <div
+              data-aos="flip-left"
+              data-aos-delay="200"
               class="min-h-360 lg:col-span-2 flex flex-col justify-between bg-brand-light-primary gap-10 rounded-2xl lg:rounded-20 py-6 px-4 sm:py-8 sm:px-6"
             >
               <div class="space-y-4">
@@ -1937,6 +1993,8 @@
             </div>
             <!-- Block -->
             <div
+              data-aos="flip-left"
+              data-aos-delay="400"
               class="min-h-360 lg:col-span-3 relative flex flex-col justify-between gap-10 bg-brand-light-primary rounded-2xl lg:rounded-20 overflow-hidden after:absolute after:inset-0 after:z-10 after:bg-block py-6 px-4 sm:py-8 sm:px-6"
             >
               <img
@@ -1984,6 +2042,8 @@
             </div>
             <!-- Block -->
             <div
+              data-aos="flip-left"
+              data-aos-delay="600"
               class="min-h-360 lg:col-span-3 relative flex flex-col justify-between gap-10 bg-brand-dark-2 rounded-2xl lg:rounded-20 overflow-hidden py-6 px-4 sm:py-8 sm:px-6"
             >
               <img
@@ -2038,6 +2098,8 @@
             </div>
             <!-- Block -->
             <div
+              data-aos="flip-left"
+              data-aos-delay="800"
               class="min-h-360 lg:col-span-2 relative flex flex-col justify-between gap-10 bg-brand-primary rounded-2xl lg:rounded-20 py-6 px-4 sm:py-8 sm:px-6"
             >
               <div class="space-y-3 ralative z-20 text-white">
@@ -2093,12 +2155,15 @@
         <div class="max-w-base mx-auto space-y-5 lg:space-y-6 px-5">
           <!-- Text & Slider Buttons -->
           <div class="flex items-center justify-between space-y-3 lg:space-y-0">
-            <h2>
+            <h2 data-aos="fade-right">
               Строим фермы и поставляем <br />
               оборудование по РФ и СНГ
             </h2>
             <!-- Slider Buttons -->
-            <div class="hidden sm:flex items-center bg-white rounded-full">
+            <div
+              data-aos="fade-left"
+              class="hidden sm:flex items-center bg-white rounded-full"
+            >
               <!-- Prev Button -->
               <button class="prev w-11 h-11 grid place-content-center">
                 <svg
@@ -2140,7 +2205,7 @@
           </div>
 
           <!-- Swiper -->
-          <div class="swiper mySwiper2 mt-6 lg:mt-8">
+          <div class="swiper mySwiper2 mt-6 lg:mt-8" data-aos="zoom-in-down">
             <div class="swiper-wrapper">
               <!-- Slide -->
               <div class="swiper-slide">
@@ -2486,6 +2551,7 @@
           <!-- Adress -->
           <div
             class="md:w-1/2 lg:w-[24.5625rem] space-y-10 bg-brand-primary text-white rounded-20 lg:rounded-30 px-6 py-8 lg:py-12 lg:px-10"
+            data-aos="fade-down"
           >
             <div class="space-y-8">
               <h2 class="text-white">Контакты</h2>
@@ -2611,6 +2677,7 @@
           <!-- Map -->
           <div
             class="flex-1 md:h-auto rounded-20 lg:rounded-30 overflow-hidden"
+            data-aos="fade-up"
           >
             <div style="position: relative; overflow: hidden" class="h-full">
               <a
@@ -2643,10 +2710,16 @@
       </section>
     </main>
 
-    <footer id="footer" class="relative z-10 bg-brand-primary text-white">
-      <div class="max-w-base mx-auto px-5">
-        <!-- Navbar -->
+    <footer
+      id="footer"
+      class="relative z-10 bg-brand-primary text-white sm:pb-8"
+    >
+      <div
+        class="max-w-base mx-auto min-h-72 flex flex-col justify-between px-5"
+        data-aos="fade-down"
+      >
         <div>
+          <!-- Top Items -->
           <div
             class="flex flex-col gap-4 sm:flex-row sm:items-center justify-between pb-4"
           >
@@ -2660,7 +2733,7 @@
 
             <!-- Button -->
             <button
-              class="h-10 sm:h-12 flex items-center justify-center sm:justify-start gap-2.5 bg-white/10 text-white font-semibold rounded-2xl hover:rounded-[3rem] transition-all duration-500 sm:px-[1.125rem]"
+              class="h-10 sm:h-12 flex items-center justify-center sm:justify-start gap-2.5 bg-white/10 text-white font-semibold rounded-xl sm:rounded-2xl hover:rounded-[3rem] transition-all duration-500 sm:px-[1.125rem]"
             >
               Скачать референс-лист
               <svg
@@ -2766,14 +2839,21 @@
             </div>
           </div>
         </div>
-
         <!-- Bottom Texts -->
         <div
-          class="flex flex-col sm:flex-row gap-4 sm:items-center text-white/50 mt-5"
+          class="flex flex-col sm:flex-row justify-between gap-4 sm:items-center text-white/50 mt-5"
         >
           <div class="flex flex-col sm:flex-row gap-4 sm:items-center">
-            <a href="#">Политика конфиденциальности</a>
-            <a href="#">Соглашение об обработке данных</a>
+            <a
+              href="#"
+              class="hover:text-brand-light-green transition-all duration-200"
+              >Политика конфиденциальности</a
+            >
+            <a
+              href="#"
+              class="hover:text-brand-light-green transition-all duration-200"
+              >Соглашение об обработке данных</a
+            >
           </div>
           <p>© Ковальчук, 2024</p>
         </div>
@@ -2783,5 +2863,6 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>

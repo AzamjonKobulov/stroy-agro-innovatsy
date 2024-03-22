@@ -788,6 +788,9 @@ section,
 .min-h-96{
   min-height: 24rem;
 }
+.min-h-72{
+  min-height: 18rem;
+}
 .w-10{
   width: 2.5rem;
 }
@@ -1565,6 +1568,14 @@ input[type='radio']:checked + label + svg{
   .sm\:py-8{
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .sm\:pb-0{
+    padding-bottom: 0px;
+  }
+
+  .sm\:pb-10{
+    padding-bottom: 2.5rem;
   }
 
   .sm\:text-start{

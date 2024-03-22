@@ -1,3 +1,9 @@
+document.addEventListener('DOMContentLoaded', function () {
+  AOS.init({
+    duration: 1000,
+  });
+});
+
 const navOnScroll = document.querySelector('.nav-on-scroll');
 
 // Scroll Nav
