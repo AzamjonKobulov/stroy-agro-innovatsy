@@ -1484,6 +1484,421 @@
           </div>
         </div>
       </section>
+
+      <!-- Calculate Section -->
+      <section
+        id="calculate"
+        class="relative bg-farm bg-no-repeat bg-cover bg-center after:absolute after:inset-0 after:bg-black/50"
+      >
+        <div
+          class="max-w-base mx-auto relative z-10 flex flex-col lg:flex-row justify-center lg:justify-between gap-7 px-5"
+        >
+          <h2 class="max-w-xl text-white text-center lg:text-start">
+            Рассчитайте стоимость индивидуального строительства ферм
+          </h2>
+
+          <!-- Form -->
+          <div
+            class="max-w-[40.875rem] mx-auto lg:mx-0 w-full bg-white font-forma rounded-2xl lg:rounded-20 xl:rounded-30 p-5 xl:p-8"
+          >
+            <form action="#" class="grid grid-cols-2 gap-5 xl:gap-8">
+              <!-- Enter amount -->
+              <label for="response" class="col-span-2 xs:col-span-1 space-y-2">
+                <span class="text-sm sm:text-base text-brand-dark font-medium"
+                  >Введите кол-во поголовье скота</span
+                >
+                <input
+                  type="text"
+                  placeholder="Ваш ответ"
+                  class="h-14 w-full bg-brand-light-input text-sm font-medium text-brand-dark placeholder:text-brand-gray-400 rounded-2xl outline-none px-6"
+                />
+              </label>
+              <!-- Select Type -->
+              <label
+                for="selectButton1"
+                class="col-span-2 xs:col-span-1 space-y-2"
+              >
+                <span class="text-sm sm:text-base text-brand-dark font-medium"
+                  >Выберете тип содержания</span
+                >
+                <div class="relative">
+                  <button
+                    id="selectButton1"
+                    type="button"
+                    class="h-14 w-full bg-brand-light-input text-sm font-medium text-brand-dark text-brand-gray-400 rounded-2xl focus:bg-brand-whitish outline-none text-left px-6 transform transition-transform"
+                    aria-haspopup="listbox"
+                    aria-expanded="false"
+                  >
+                    <span id="selectedOption1" class="block truncate"
+                      >Выберете</span
+                    >
+                    <span
+                      class="absolute inset-y-0 right-2 flex items-center pr-2 pointer-events-none"
+                    >
+                      <!-- Heroicon name: selector -->
+                      <svg
+                        id="selectorIcon1"
+                        width="16"
+                        height="17"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="rotate-180"
+                      >
+                        <g clip-path="url(#clip0_63_1425)">
+                          <path
+                            d="M12 10.5L8 6.5L4 10.5"
+                            stroke="#222222"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_63_1425">
+                            <rect
+                              width="16"
+                              height="16"
+                              fill="white"
+                              transform="translate(0 0.5)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span>
+                  </button>
+
+                  <div
+                    id="selectOptions1"
+                    class="max-h-56 absolute z-10 divide-y divide-[#F4F4F4] mt-1 w-full bg-white rounded-20 shadow-list text-base overflow-auto focus:outline-none sm:text-sm hidden"
+                    tabindex="-1"
+                  >
+                    <!-- Select options -->
+                    <div
+                      class="flex items-center gap-2.5 hover:bg-brand-light-primary cursor-pointer px-4 py-2"
+                      data-value="option1"
+                    >
+                      Ответ 1
+                    </div>
+                    <div
+                      class="flex items-center gap-2.5 hover:bg-brand-light-primary cursor-pointer px-4 py-2"
+                      data-value="option2"
+                    >
+                      Ответ 2
+                    </div>
+                    <div
+                      class="flex items-center gap-2.5 hover:bg-brand-light-primary cursor-pointer px-4 py-2"
+                      data-value="option3"
+                    >
+                      Ответ 3
+                    </div>
+                    <div
+                      class="flex items-center gap-2.5 hover:bg-brand-light-primary cursor-pointer px-4 py-2"
+                      data-value="option3"
+                    >
+                      Телятник
+                    </div>
+                  </div>
+                </div>
+              </label>
+
+              <!-- Select City -->
+              <label for="selectButton2" class="col-span-2 space-y-2">
+                <span class="text-sm sm:text-base text-brand-dark font-medium"
+                  >Выберете регион строительства</span
+                >
+                <div class="relative">
+                  <button
+                    id="selectButton2"
+                    type="button"
+                    class="h-14 w-full bg-brand-light-input text-sm font-medium text-brand-gray-400 rounded-2xl focus:bg-brand-whitish outline-none text-left px-6 transform transition-transform"
+                    aria-haspopup="listbox"
+                    aria-expanded="false"
+                  >
+                    <span id="selectedOption2" class="block truncate"
+                      >Выберете</span
+                    >
+                    <span
+                      class="absolute inset-y-0 right-2 flex items-center pr-2 pointer-events-none"
+                    >
+                      <!-- Heroicon name: selector -->
+                      <svg
+                        id="selectorIcon2"
+                        width="16"
+                        height="17"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="rotate-180"
+                      >
+                        <g clip-path="url(#clip0_63_1425)">
+                          <path
+                            d="M12 10.5L8 6.5L4 10.5"
+                            stroke="#222222"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_63_1425">
+                            <rect
+                              width="16"
+                              height="16"
+                              fill="white"
+                              transform="translate(0 0.5)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span>
+                  </button>
+
+                  <div
+                    id="selectOptions2"
+                    class="max-h-56 absolute z-10 divide-y divide-[#F4F4F4] mt-1 w-full bg-white rounded-20 shadow-list text-base overflow-auto focus:outline-none sm:text-sm hidden"
+                    tabindex="-1"
+                  >
+                    <!-- Select options -->
+                    <div
+                      class="flex items-center gap-2.5 hover:bg-brand-light-primary cursor-pointer px-4 py-2"
+                      data-value="option1"
+                    >
+                      Москва и МО
+                    </div>
+                    <div
+                      class="flex items-center gap-2.5 hover:bg-brand-light-primary cursor-pointer px-4 py-2"
+                      data-value="option2"
+                    >
+                      Москва и МО
+                    </div>
+                    <div
+                      class="flex items-center gap-2.5 hover:bg-brand-light-primary cursor-pointer px-4 py-2"
+                      data-value="option3"
+                    >
+                      Москва и МО
+                    </div>
+                    <div
+                      class="flex items-center gap-2.5 hover:bg-brand-light-primary cursor-pointer px-4 py-2"
+                      data-value="option3"
+                    >
+                      Москва и МО
+                    </div>
+                  </div>
+                </div>
+              </label>
+
+              <!-- Project? -->
+              <div class="space-y-2 flex flex-col justify-between">
+                <span class="text-sm sm:text-base text-brand-dark font-medium"
+                  >У вас есть <br />
+                  проект?</span
+                >
+                <div class="flex items-center gap-4">
+                  <!-- Yes -->
+                  <div class="flex items-center gap-2">
+                    <input
+                      type="radio"
+                      id="projectYes"
+                      name="1"
+                      class="hidden"
+                    />
+                    <label
+                      for="projectYes"
+                      class="w-4 h-4 sm:w-6 sm:h-6 shrink-0 bg-brand-gray-500 rounded-full cursor-pointer"
+                    >
+                    </label>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-4 h-4 sm:w-6 sm:h-6 cursor-pointer hidden"
+                    >
+                      <rect width="24" height="24" rx="12" fill="#9DDC21" />
+                      <path
+                        d="M7 11.6364L10.8462 16L17 8"
+                        stroke="white"
+                        stroke-width="2.25"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+
+                    <span class="text-sm text-brand-dark">Да</span>
+                  </div>
+                  <!-- No -->
+                  <div class="flex items-center gap-2">
+                    <input
+                      type="radio"
+                      id="projectNo"
+                      name="1"
+                      class="hidden"
+                    />
+                    <label
+                      for="projectNo"
+                      class="w-4 h-4 sm:w-6 sm:h-6 shrink-0 bg-brand-gray-500 rounded-full cursor-pointer"
+                    >
+                    </label>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-4 h-4 sm:w-6 sm:h-6 cursor-pointer hidden"
+                    >
+                      <rect width="24" height="24" rx="12" fill="#9DDC21" />
+                      <path
+                        d="M7 11.6364L10.8462 16L17 8"
+                        stroke="white"
+                        stroke-width="2.25"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+
+                    <span class="text-sm text-brand-dark">Нет</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Help? -->
+              <div class="space-y-2">
+                <span class="text-sm sm:text-base text-brand-dark font-medium"
+                  >Нужна помощь
+                  <br />
+                  с получением субсидий?</span
+                >
+                <div class="flex items-center gap-4">
+                  <!-- Yes -->
+                  <div class="flex items-center gap-2">
+                    <input
+                      type="radio"
+                      id="projectYes1"
+                      name="2"
+                      class="hidden"
+                    />
+                    <label
+                      for="projectYes1"
+                      class="w-4 h-4 sm:w-6 sm:h-6 shrink-0 bg-brand-gray-500 rounded-full cursor-pointer"
+                    >
+                    </label>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-4 h-4 sm:w-6 sm:h-6 cursor-pointer hidden"
+                    >
+                      <rect width="24" height="24" rx="12" fill="#9DDC21" />
+                      <path
+                        d="M7 11.6364L10.8462 16L17 8"
+                        stroke="white"
+                        stroke-width="2.25"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+
+                    <span class="text-sm text-brand-dark">Да</span>
+                  </div>
+                  <!-- No -->
+                  <div class="flex items-center gap-2">
+                    <input
+                      type="radio"
+                      id="projectNo2"
+                      name="2"
+                      class="hidden"
+                    />
+                    <label
+                      for="projectNo2"
+                      class="w-4 h-4 sm:w-6 sm:h-6 shrink-0 bg-brand-gray-500 rounded-full cursor-pointer"
+                    >
+                    </label>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-4 h-4 sm:w-6 sm:h-6 cursor-pointer hidden"
+                    >
+                      <rect width="24" height="24" rx="12" fill="#9DDC21" />
+                      <path
+                        d="M7 11.6364L10.8462 16L17 8"
+                        stroke="white"
+                        stroke-width="2.25"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+
+                    <span class="text-sm text-brand-dark">Нет</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Cost -->
+              <div
+                class="col-span-2 grid xs:grid-cols-2 text-center gap-5 xs:gap-0 bg-brand-light-primary font-forma rounded-2xl p-4"
+              >
+                <div class="space-y-1">
+                  <p class="text-brand-dark text-sm xs:text-base">
+                    Стоимость каркаса
+                  </p>
+                  <p class="text-brand-primary text-xl xs:text-2xl">
+                    от 6 000 000 ₽
+                  </p>
+                </div>
+                <div class="space-y-1">
+                  <p class="text-brand-dark text-sm xs:text-base">
+                    Стоимость под ключ
+                  </p>
+                  <p class="text-brand-primary text-xl xs:text-2xl">
+                    от 12 000 000₽
+                  </p>
+                </div>
+              </div>
+
+              <!-- Button -->
+              <div class="col-span-2 space-x-2 font-manrope">
+                <div>
+                  <button
+                    class="w-full flex items-center gap-1.5 justify-center text-sm sm:text-base font-semibold bg-brand-primary text-white rounded-xl sm:rounded-2xl py-3 sm:py-4"
+                  >
+                    Оставить заявку<svg
+                      width="21"
+                      height="21"
+                      viewBox="0 0 21 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.3685 7.45241L6.04701 7.45242V5.786L15.2135 5.786L15.2135 14.9525H13.5471V8.63093L6.37463 15.8033L5.19612 14.6248L12.3685 7.45241Z"
+                        fill="white"
+                      />
+                    </svg></button
+                  ><button
+                    class="w-full flex items-center gap-1.5 justify-center font-semibold text-sm text-brand-primary rounded-2xl py-4"
+                  >
+                    Скачать пример бизнес-плана
+                  </button>
+                </div>
+
+                <p class="text-[#999999] text-xs sm:text-sm">
+                  Стоимость расчета является предварительной.
+                  <br class="hidden xs:block" />
+                  Для точного расчета, оставьте заявку или звоните 8 (800)
+                  2000-600
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Swiper JS -->

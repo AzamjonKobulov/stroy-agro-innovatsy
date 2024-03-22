@@ -7,6 +7,7 @@ module.exports = {
         base: '87.5rem',
       },
       screens: {
+        xs: '30rem',
         '2xl': '90rem',
       },
       fontFamily: {
@@ -26,6 +27,7 @@ module.exports = {
             200: '#5E5E5E',
             300: '#4B4B4B',
             400: '#8C8C8C',
+            500: '#F3F3F3',
           },
         },
       },
@@ -44,6 +46,12 @@ module.exports = {
       },
       dropShadow: {
         box: '0px 4px 20px 0px #0000000D',
+      },
+      boxShadow: {
+        list: '0px 10px 20px 0px #0000001A',
+      },
+      backgroundImage: {
+        farm: "url('../assets/images/img-factory.png')",
       },
     },
   },

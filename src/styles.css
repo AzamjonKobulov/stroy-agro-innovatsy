@@ -54,3 +54,11 @@
   opacity: 0.5;
   pointer-events: none;
 }
+
+input[type='radio']:checked + label {
+  @apply hidden;
+}
+
+input[type='radio']:checked + label + svg {
+  @apply block;
+}

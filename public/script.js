@@ -1,5 +1,6 @@
 const navOnScroll = document.querySelector('.nav-on-scroll');
 
+// Scroll Nav
 document.addEventListener('scroll', function () {
   if (window.scrollY > 100) {
     navOnScroll.classList.remove('-translate-y-full'); // Remove the translate class
@@ -8,6 +9,7 @@ document.addEventListener('scroll', function () {
   }
 });
 
+// Tabs
 const tabButtons = document.querySelectorAll('.tab-button');
 const tabContents = document.querySelectorAll('.tab-content');
 
@@ -48,8 +50,8 @@ var swiper = new Swiper('.mySwiper', {
 
 // Change stroke color of SVG buttons based on slide navigation
 swiper.on('slideChange', function () {
-  const isBeginning = swiper.isBeginning; // Check if the first slide is reached
-  const isEnd = swiper.isEnd; // Check if the last slide is reached
+  const isBeginning = swiper.isBeginning;
+  const isEnd = swiper.isEnd;
   const prevPath = document.querySelectorAll('.prev-path');
   const nextPath = document.querySelectorAll('.next-path');
 
@@ -64,4 +66,92 @@ swiper.on('slideChange', function () {
     prevPath.forEach((path) => path.setAttribute('stroke', 'black'));
     nextPath.forEach((path) => path.setAttribute('stroke', 'black'));
   }
+});
+
+// Select List
+document.addEventListener('DOMContentLoaded', function () {
+  const selectButtons = document.querySelectorAll('[id^="selectButton"]');
+  const selectOptionsList = document.querySelectorAll('[id^="selectOptions"]');
+  const selectorIcons = document.querySelectorAll('[id^="selectorIcon"]');
+  const selectedOptionTexts = document.querySelectorAll(
+    '[id^="selectedOption"]'
+  );
+
+  selectButtons.forEach((selectButton, index) => {
+    const selectOptions = selectOptionsList[index];
+    const selectorIcon = selectorIcons[index];
+    const selectedOptionText = selectedOptionTexts[index];
+
+    // Function to toggle select options
+    selectButton.addEventListener('click', function () {
+      selectOptions.classList.toggle('hidden');
+      // Rotate the selector icon
+      selectorIcon.classList.toggle('rotate-180');
+      // Update aria-expanded attribute
+      const expanded = selectOptions.classList.contains('hidden')
+        ? 'false'
+        : 'true';
+      selectButton.setAttribute('aria-expanded', expanded);
+    });
+
+    // Function to handle option selection
+    selectOptions.addEventListener('click', function (event) {
+      if (event.target.tagName === 'DIV') {
+        const selectedValue = event.target.getAttribute('data-value');
+
+        // Update the selected option in the button
+        selectedOptionText.textContent = event.target.textContent;
+
+        // Change text color class
+        selectedOptionText.classList.remove('text-brand-gray-400');
+        selectedOptionText.classList.add('text-brand-dark');
+
+        // Remove bg-brand-light-primary class from all options
+        const allOptions = selectOptions.querySelectorAll('div');
+        allOptions.forEach((option) => {
+          option.classList.remove('bg-brand-light-primary');
+          option.innerHTML = option.textContent; // Reset option text (removing SVG icon)
+        });
+
+        // Add bg-brand-light-primary class to the clicked option
+        event.target.classList.add('bg-brand-light-primary');
+
+        // Append SVG icon to selected option
+        const svgIcon = `<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="16" height="16" rx="8" fill="#9AE800"/>
+            <path d="M4 7.72727L7.07692 11L12 5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4 7.72727L7.07692 11L12 5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>`;
+        event.target.innerHTML =
+          event.target.textContent +
+          (event.target.classList.contains('bg-brand-light-primary')
+            ? svgIcon
+            : '');
+
+        // You can do something with the selected value here
+        console.log(selectedValue);
+
+        // Hide select options
+        selectOptions.classList.add('hidden');
+        // Rotate the selector icon
+        selectorIcon.classList.remove('rotate-180');
+        // Update aria-expanded attribute
+        selectButton.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Close select options when clicking outside
+    document.addEventListener('click', function (event) {
+      if (
+        !selectButton.contains(event.target) &&
+        !selectOptions.contains(event.target)
+      ) {
+        selectOptions.classList.add('hidden');
+        // Rotate the selector icon
+        selectorIcon.classList.remove('rotate-180');
+        // Update aria-expanded attribute
+        selectButton.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
 });
