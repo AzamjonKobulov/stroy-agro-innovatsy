@@ -8,6 +8,7 @@ const navOnScroll = document.querySelector('.nav-on-scroll');
 
 // Scroll Nav
 document.addEventListener('scroll', function () {
+  const navOnScroll = document.querySelector('.nav-on-scroll');
   if (window.scrollY > 100) {
     navOnScroll.classList.remove('-translate-y-full'); // Remove the translate class
   } else {
@@ -205,15 +206,17 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+const mobileMenuBtns = document.querySelectorAll('#mobileMenuBtn');
 const mobileMenu = document.querySelector('#mobileMenu');
-const mobileMenuBtn = document.querySelector('#mobileMenuBtn');
 
 const toggleMobileMenu = () => {
   mobileMenu.classList.toggle('-translate-y-full');
   document.body.classList.toggle('overflow-hidden');
 };
 
-mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+mobileMenuBtns.forEach((btn) => {
+  btn.addEventListener('click', toggleMobileMenu);
+});
 
 document.querySelectorAll('#mobileMenu ul a').forEach((link) => {
   link.addEventListener('click', toggleMobileMenu);

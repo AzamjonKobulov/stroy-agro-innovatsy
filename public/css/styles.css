@@ -677,6 +677,9 @@ section,
 .z-50{
   z-index: 50;
 }
+.z-30{
+  z-index: 30;
+}
 .col-span-2{
   grid-column: span 2 / span 2;
 }
