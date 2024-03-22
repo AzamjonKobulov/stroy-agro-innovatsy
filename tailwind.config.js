@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       maxWidth: {
         base: '87.5rem',
+        511: '31.9375rem',
+        618: '38.625rem',
       },
       screens: {
         xs: '30rem',
@@ -17,10 +19,12 @@ module.exports = {
       colors: {
         brand: {
           primary: '#1F5D46',
+          green: '#235560',
           'light-primary': '#F1FCF8',
           'light-input': '#F7F9FA',
           whitish: '#F9FCFB',
           dark: '#0B0B0B',
+          'dark-2': '#2F2F2F',
           'light-green': '#9DDC21',
           gray: {
             100: '#999999',
@@ -39,6 +43,7 @@ module.exports = {
       },
       spacing: {
         100: '6.25rem',
+        360: '22.5rem',
       },
       borderRadius: {
         20: '1.25rem',
@@ -52,6 +57,8 @@ module.exports = {
       },
       backgroundImage: {
         farm: "url('../assets/images/img-factory.png')",
+        block:
+          'linear-gradient(104.28deg, rgba(0, 0, 0, 0.49) 46.14%, rgba(0, 0, 0, 0.21) 77%)',
       },
     },
   },

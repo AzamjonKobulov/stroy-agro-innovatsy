@@ -453,6 +453,43 @@ h3{
   }
 }
 
+h4{
+  font-family: Forma DJR Cyrilic Variable, Sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 640px){
+
+  h4{
+    font-size: 2rem;
+  }
+}
+
+h5{
+  font-family: Forma DJR Cyrilic Variable, Sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(11 11 11 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px){
+
+  h5{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px){
+
+  h5{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
 section,
   footer{
   margin-top: -2.5rem;
@@ -595,9 +632,15 @@ section,
 .relative{
   position: relative;
 }
+.inset-0{
+  inset: 0px;
+}
 .inset-y-0{
   top: 0px;
   bottom: 0px;
+}
+.-bottom-10{
+  bottom: -2.5rem;
 }
 .left-0{
   left: 0px;
@@ -605,11 +648,17 @@ section,
 .right-2{
   right: 0.5rem;
 }
+.right-5{
+  right: 1.25rem;
+}
 .top-0{
   top: 0px;
 }
 .z-10{
   z-index: 10;
+}
+.z-20{
+  z-index: 20;
 }
 .z-50{
   z-index: 50;
@@ -627,8 +676,17 @@ section,
 .mt-1{
   margin-top: 0.25rem;
 }
+.mt-3{
+  margin-top: 0.75rem;
+}
+.mt-4{
+  margin-top: 1rem;
+}
 .mt-6{
   margin-top: 1.5rem;
+}
+.mt-8{
+  margin-top: 2rem;
 }
 .block{
   display: block;
@@ -672,6 +730,16 @@ section,
 .max-h-56{
   max-height: 14rem;
 }
+.min-h-360{
+  min-height: 22.5rem;
+}
+.min-h-\[39rem\]{
+  min-height: 39rem;
+}
+.min-h-max{
+  min-height: -moz-max-content;
+  min-height: max-content;
+}
 .w-10{
   width: 2.5rem;
 }
@@ -681,11 +749,18 @@ section,
 .w-11{
   width: 2.75rem;
 }
+.w-32{
+  width: 8rem;
+}
 .w-4{
   width: 1rem;
 }
 .w-6{
   width: 1.5rem;
+}
+.w-fit{
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .w-full{
   width: 100%;
@@ -701,6 +776,9 @@ section,
 }
 .max-w-4xl{
   max-width: 56rem;
+}
+.max-w-\[31\.9375rem\]{
+  max-width: 31.9375rem;
 }
 .max-w-\[40\.875rem\]{
   max-width: 40.875rem;
@@ -884,6 +962,10 @@ section,
 .border-white\/10{
   border-color: rgb(255 255 255 / 0.1);
 }
+.bg-brand-dark-2{
+  --tw-bg-opacity: 1;
+  background-color: rgb(47 47 47 / var(--tw-bg-opacity));
+}
 .bg-brand-gray-500{
   --tw-bg-opacity: 1;
   background-color: rgb(243 243 243 / var(--tw-bg-opacity));
@@ -951,6 +1033,10 @@ section,
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+.px-7{
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -962,6 +1048,10 @@ section,
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 .pb-24{
   padding-bottom: 6rem;
@@ -1004,14 +1094,6 @@ section,
 .text-\[28px\]{
   font-size: 28px;
 }
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1045,6 +1127,10 @@ section,
   --tw-text-opacity: 1;
   color: rgb(11 11 11 / var(--tw-text-opacity));
 }
+.text-brand-dark-2{
+  --tw-text-opacity: 1;
+  color: rgb(47 47 47 / var(--tw-text-opacity));
+}
 .text-brand-gray-200{
   --tw-text-opacity: 1;
   color: rgb(94 94 94 / var(--tw-text-opacity));
@@ -1064,6 +1150,9 @@ section,
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-white\/80{
+  color: rgb(255 255 255 / 0.8);
 }
 .shadow{
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
@@ -1095,6 +1184,9 @@ section,
 }
 .duration-200{
   transition-duration: 200ms;
+}
+.duration-300{
+  transition-duration: 300ms;
 }
 .duration-500{
   transition-duration: 500ms;
@@ -1163,9 +1255,19 @@ input[type='radio']:checked + label + svg{
   inset: 0px;
 }
 
+.after\:z-10::after{
+  content: var(--tw-content);
+  z-index: 10;
+}
+
 .after\:bg-black\/50::after{
   content: var(--tw-content);
   background-color: rgb(0 0 0 / 0.5);
+}
+
+.after\:bg-block::after{
+  content: var(--tw-content);
+  background-image: linear-gradient(104.28deg, rgba(0, 0, 0, 0.49) 46.14%, rgba(0, 0, 0, 0.21) 77%);
 }
 
 .hover\:rounded-\[3\.75rem\]:hover{
@@ -1178,6 +1280,10 @@ input[type='radio']:checked + label + svg{
 
 .hover\:rounded-\[4rem\]:hover{
   border-radius: 4rem;
+}
+
+.hover\:rounded-\[6\.25rem\]:hover{
+  border-radius: 6.25rem;
 }
 
 .hover\:bg-brand-light-primary:hover{
@@ -1201,6 +1307,14 @@ input[type='radio']:checked + label + svg{
 }
 
 @media (min-width: 640px){
+
+  .sm\:bottom-auto{
+    bottom: auto;
+  }
+
+  .sm\:right-14{
+    right: 3.5rem;
+  }
 
   .sm\:block{
     display: block;
@@ -1236,6 +1350,11 @@ input[type='radio']:checked + label + svg{
 
   .sm\:w-auto{
     width: auto;
+  }
+
+  .sm\:w-fit{
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .sm\:grid-cols-2{
@@ -1274,6 +1393,19 @@ input[type='radio']:checked + label + svg{
     border-radius: 1rem;
   }
 
+  .sm\:rounded-3xl{
+    border-radius: 1.5rem;
+  }
+
+  .sm\:p-7{
+    padding: 1.75rem;
+  }
+
+  .sm\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .sm\:px-\[1\.125rem\]{
     padding-left: 1.125rem;
     padding-right: 1.125rem;
@@ -1282,6 +1414,11 @@ input[type='radio']:checked + label + svg{
   .sm\:py-4{
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .sm\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .sm\:text-start{
@@ -1301,11 +1438,6 @@ input[type='radio']:checked + label + svg{
   .sm\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .sm\:text-xl{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 }
 
@@ -1336,6 +1468,10 @@ input[type='radio']:checked + label + svg{
     max-width: 40.4375rem;
   }
 
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }
@@ -1362,6 +1498,14 @@ input[type='radio']:checked + label + svg{
 }
 
 @media (min-width: 1024px){
+
+  .lg\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
+  .lg\:col-span-3{
+    grid-column: span 3 / span 3;
+  }
 
   .lg\:mx-0{
     margin-left: 0px;
@@ -1410,6 +1554,10 @@ input[type='radio']:checked + label + svg{
 
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-5{
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .lg\:flex-row{
@@ -1470,6 +1618,10 @@ input[type='radio']:checked + label + svg{
     border-radius: 1.25rem;
   }
 
+  .lg\:rounded-2xl{
+    border-radius: 1rem;
+  }
+
   .lg\:rounded-30{
     border-radius: 1.875rem;
   }
@@ -1485,6 +1637,11 @@ input[type='radio']:checked + label + svg{
   .lg\:px-5{
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  .lg\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .lg\:pb-32{

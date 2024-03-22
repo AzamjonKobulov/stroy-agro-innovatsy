@@ -48,6 +48,22 @@ var swiper = new Swiper('.mySwiper', {
   },
 });
 
+// Initialize Swiper
+var swiper = new Swiper('.mySwiper2', {
+  navigation: {
+    nextEl: '.next',
+    prevEl: '.prev',
+  },
+  slidesPerView: 1,
+  spaceBetween: 16,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 16,
+    },
+  },
+});
+
 // Change stroke color of SVG buttons based on slide navigation
 swiper.on('slideChange', function () {
   const isBeginning = swiper.isBeginning;
@@ -153,5 +169,32 @@ document.addEventListener('DOMContentLoaded', function () {
         selectButton.setAttribute('aria-expanded', 'false');
       }
     });
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Get the form element
+  const form = document.querySelector('form');
+  // Get the success modal element
+  const successModal = document.querySelector('.success-modal');
+
+  // Add event listener for form submission
+  form.addEventListener('submit', function (event) {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+
+    // Hide the form
+    form.classList.add('hidden');
+    // Display the success modal
+    successModal.classList.remove('hidden');
+  });
+
+  // Add event listener to close the success modal
+  const closeButton = document.querySelector('.success-modal button');
+  closeButton.addEventListener('click', function () {
+    // Show the form
+    form.classList.remove('hidden');
+    // Hide the success modal
+    successModal.classList.add('hidden');
   });
 });

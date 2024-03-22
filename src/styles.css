@@ -30,6 +30,14 @@
     @apply text-2xl lg:text-4xl xl:text-[2.5rem] font-medium font-forma text-brand-dark;
   }
 
+  h4 {
+    @apply text-2xl sm:text-[2rem] font-forma;
+  }
+
+  h5 {
+    @apply font-forma text-lg sm:text-xl lg:text-2xl text-brand-dark;
+  }
+
   section,
   footer {
     @apply pt-8 pb-16 sm:pt-12 sm:pb-24 lg:pt-base lg:pb-32 rounded-t-20 lg:rounded-t-30 -mt-10 sm:-mt-14 lg:-mt-16;
