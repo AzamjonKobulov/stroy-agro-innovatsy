@@ -15,7 +15,7 @@
   <body>
     <!-- Header -->
     <header class="bg-brand-primary">
-      <nav data-aos="fade-down">
+      <nav>
         <!-- Navbar When Scrolling -->
         <div
           class="nav-on-scroll fixed left-0 top-0 w-full z-50 bg-white -translate-y-full rounded-b-20 transition-all duration-500 shadow"
@@ -73,7 +73,7 @@
             </ul>
 
             <!-- Mobile Menu Button -->
-            <button class="lg:hidden">
+            <button id="mobileMenuBtn" class="lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -93,7 +93,10 @@
         </div>
 
         <!-- Navbar -->
-        <div class="max-w-base mx-auto text-white pt-3.5 px-5">
+        <div
+          data-aos="fade-down"
+          class="max-w-base mx-auto relative z-50 text-white pt-3.5 px-5"
+        >
           <div
             class="flex items-center justify-between border-b border-white/10 pb-4"
           >
@@ -129,7 +132,7 @@
               </button>
 
               <!-- Mobile Menu Button -->
-              <button class="lg:hidden">
+              <button id="mobileMenuBtn" class="lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -232,6 +235,115 @@
           </div>
         </div>
       </nav>
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="w-full h-full lg:hidden fixed inset-0 z-40 -translate-y-full flex flex-col justify-between bg-brand-light-primary text-brand-primary text-xl sm:text-2xl font-bold transition-all duration-300 pb-7 px-5 pt-5"
+      >
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div class="flex items-center gap-3">
+            <img src="./assets/images/icon-logo.svg" alt="Logo" />
+            <p class="font-forma text-xl lg:text-2xl xl:text-[2rem]">
+              СтройАгроИнновации
+            </p>
+          </div>
+
+          <button id="mobileMenuBtn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-8 h-8 fill-brand-primary"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+        <!-- Links -->
+        <ul class="h-2/3 flex flex-col items-center justify-center space-y-10">
+          <li id="mobileMenu">
+            <a href="">О компании</a>
+          </li>
+          <li id="mobileMenu">
+            <a href="">Проектируем и строим </a>
+          </li>
+          <li id="mobileMenu">
+            <a href="">Технология и материалы </a>
+          </li>
+          <li id="mobileMenu">
+            <a href="">Узнать цену</a>
+          </li>
+          <li id="mobileMenu">
+            <a href="">Портфолио</a>
+          </li>
+          <li id="mobileMenu">
+            <a href="">Отзывы</a>
+          </li>
+        </ul>
+        <!-- Contacts -->
+        <div class="flex flex-col xl:flex-row items-center gap-2 xl:gap-6">
+          <!-- Phone -->
+          <a href="#" class="flex items-center gap-2">
+            <svg
+              width="20"
+              height="21"
+              viewBox="0 0 20 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.54167 7.16667L7.5 3.625H5.8353H3.12657C3.12552 3.69432 3.125 3.76377 3.125 3.83333C3.125 6.30605 3.78776 8.62398 4.94532 10.6192C6.1313 12.6633 7.83668 14.3687 9.88084 15.5547C11.876 16.7122 14.1939 17.375 16.6667 17.375H16.875V13L13.3333 11.9583L11.8265 13.5279C9.72985 12.4791 8.02088 10.7702 6.97206 8.67349L8.54167 7.16667Z"
+                stroke="white"
+                stroke-width="1.25"
+              />
+            </svg>
+            <span class="font-semibold">8 (800) 2000-00-00</span>
+          </a>
+          <!-- Email -->
+          <a href="#" class="flex items-center gap-2">
+            <svg
+              width="18"
+              height="15"
+              viewBox="0 0 18 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.7083 1.45831H17.3333V0.833313H16.7083V1.45831ZM16.7083 13.5416V14.1666H17.3333V13.5416H16.7083ZM1.29166 13.5416H0.666664V14.1666H1.29166V13.5416ZM1.29166 1.45831V0.833313H0.666664V1.45831H1.29166ZM9 8.33331L8.60422 8.81704L9 9.14085L9.39577 8.81704L9 8.33331ZM16.0833 1.45831V13.5416H17.3333V1.45831H16.0833ZM16.7083 12.9166H1.29166V14.1666H16.7083V12.9166ZM1.91666 13.5416V1.45831H0.666664V13.5416H1.91666ZM1.29166 2.08331H16.7083V0.833313H1.29166V2.08331ZM9.39577 7.84959L1.89577 1.71323L1.10422 2.68067L8.60422 8.81704L9.39577 7.84959ZM16.1042 1.71323L8.60422 7.84959L9.39577 8.81704L16.8958 2.68067L16.1042 1.71323Z"
+                fill="white"
+              />
+            </svg>
+
+            <span class="font-semibold">sale@site-ferm.ru</span>
+          </a>
+        </div>
+        <!-- Button -->
+        <button
+          class="h-14 flex items-center justify-center gap-2.5 bg-brand-primary text-white font-semibold text-lg rounded-xl hover:rounded-[3rem] transition-all duration-500 sm:px-[1.125rem]"
+        >
+          Скачать референс-лист
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16.875 12.2917V16.875H3.125V12.2917M9.99999 12.5V3.125M9.99999 12.5L7.08333 9.58333M9.99999 12.5L12.9167 9.58333"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
     </header>
 
     <!-- Main Content -->
@@ -1917,6 +2029,7 @@
             <!-- Success Modal -->
             <div
               class="success-modal min-h-[39rem] hidden w-full h-full text-brand-dark transition-all duration-300"
+              data-aos="fade-left"
             >
               <div class="">
                 <h3>Спасибо, ваша заявка отправлена успешно</h3>
