@@ -497,6 +497,7 @@ h5{
 section,
   footer{
   margin-top: -2.5rem;
+  overflow-x: hidden;
   border-top-left-radius: 1.25rem;
   border-top-right-radius: 1.25rem;
   padding-top: 2rem;
