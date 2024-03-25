@@ -221,3 +221,28 @@ mobileMenuBtns.forEach((btn) => {
 document.querySelectorAll('#mobileMenu ul a').forEach((link) => {
   link.addEventListener('click', toggleMobileMenu);
 });
+
+document
+  .getElementById('scrollTopButton')
+  .addEventListener('click', function () {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  });
+
+window.addEventListener('scroll', function () {
+  var button = document.getElementById('scrollTopButton');
+  if (window.scrollY > 1000) {
+    button.classList.remove('hidden');
+  } else {
+    button.classList.add('hidden');
+  }
+});
+
+const toggleButton = document.getElementById('socialsToggleButton');
+const socialIcons = document.getElementById('socialIcons');
+
+toggleButton.addEventListener('click', () => {
+  socialIcons.classList.toggle('hidden');
+});

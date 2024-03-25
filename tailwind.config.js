@@ -54,6 +54,7 @@ module.exports = {
       },
       boxShadow: {
         list: '0px 10px 20px 0px #0000001A',
+        button: '0px 4px 20px 0px #0000001F',
       },
       backgroundImage: {
         farm: "url('../assets/images/img-factory.png')",
