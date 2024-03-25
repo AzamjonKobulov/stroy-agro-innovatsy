@@ -353,7 +353,9 @@
       >
         <div class="max-w-base mx-auto text-white px-5">
           <!-- Main -->
-          <div class="grid lg:grid-cols-2 gap-7 lg:gap-10 relative">
+          <div
+            class="flex flex-col lg:flex-row justify-between gap-7 lg:gap-10 relative"
+          >
             <img
               src="./assets/images/icon-bg-hero.svg"
               alt="Background Icon"
@@ -434,8 +436,8 @@
       </section>
 
       <!-- Company Section -->
-      <section id="about" class="bg-white px-5">
-        <div class="max-w-base mx-auto space-y-8">
+      <section id="about" class="bg-white">
+        <div class="max-w-base mx-auto space-y-8 px-5">
           <!-- Texts -->
           <div
             class="flex flex-col lg:flex-row items-center justify-between lg:text-start space-y-3 lg:space-y-0"
@@ -521,8 +523,8 @@
       </section>
 
       <!-- Build Section -->
-      <section id="build" class="bg-brand-primary px-5">
-        <div class="max-w-base mx-auto">
+      <section id="build" class="bg-brand-primary">
+        <div class="max-w-base mx-auto px-5">
           <!-- Tabs & Title -->
           <div
             class="flex flex-col md:flex-row md:items-end justify-between text-white text-center lg:text-start space-y-5 sm:space-y-3 lg:space-y-0"
@@ -536,34 +538,36 @@
             </h2>
 
             <!-- Tabs -->
-            <div
-              data-aos="fade-left"
-              class="sm:h-14 md:h-16 md:w-fit grid sm:grid-cols-3 md:flex items-center bg-white text-sm sm:text-base lg:text-lg font-semibold rounded-2xl p-1"
-            >
-              <button
-                class="tab-button active h-10 min-w-32 lg:min-w-40 xl:min-w-48 sm:h-full rounded-2xl text-brand-dark px-4 xl:px-6"
-                data-target="tab1"
+            <div class="tabs bg-white overflow-auto rounded-2xl">
+              <div
                 data-aos="fade-left"
-                data-aos-delay="200"
+                class="min-w-max sm:h-14 md:h-16 md:w-fit grid grid-cols-3 md:flex items-center text-sm sm:text-base lg:text-lg font-semibold p-1"
               >
-                Телятники и коровники
-              </button>
-              <button
-                class="tab-button h-10 min-w-32 lg:min-w-40 xl:min-w-48 sm:h-full rounded-2xl text-brand-dark px-4 xl:px-6"
-                data-target="tab2"
-                data-aos="fade-left"
-                data-aos-delay="200"
-              >
-                Птичники
-              </button>
-              <button
-                class="tab-button h-10 min-w-32 lg:min-w-40 xl:min-w-48 sm:h-full rounded-2xl text-brand-dark px-4 xl:px-6"
-                data-target="tab3"
-                data-aos="fade-left"
-                data-aos-delay="200"
-              >
-                Свинарники
-              </button>
+                <button
+                  class="tab-button active min-w-32 lg:min-w-40 xl:min-w-48 h-10 sm:h-full rounded-2xl text-brand-dark px-4 xl:px-6"
+                  data-target="tab1"
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                >
+                  Телятники и коровники
+                </button>
+                <button
+                  class="tab-button min-w-32 lg:min-w-40 xl:min-w-48 h-10 sm:h-full rounded-2xl text-brand-dark px-4 xl:px-6"
+                  data-target="tab2"
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                >
+                  Птичники
+                </button>
+                <button
+                  class="tab-button min-w-32 lg:min-w-40 xl:min-w-48 h-10 sm:h-full rounded-2xl text-brand-dark px-4 xl:px-6"
+                  data-target="tab3"
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                >
+                  Свинарники
+                </button>
+              </div>
             </div>
           </div>
           <!-- Tabs Contents -->
@@ -580,7 +584,9 @@
               class="tab-content active space-y-12 lg:space-y-[3.75rem]"
             >
               <!-- Top -->
-              <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 xl:gap-24">
+              <div
+                class="grid lg:grid-cols-2 items-start gap-10 lg:gap-16 xl:gap-24"
+              >
                 <!-- Texts -->
                 <div class="space-y-4 md:space-y-5 lg:space-y-6">
                   <h3>Телятники и коровники</h3>
@@ -830,7 +836,9 @@
             <!-- Tab content 2 -->
             <div id="tab2" class="tab-content space-y-12 lg:space-y-[3.75rem]">
               <!-- Top -->
-              <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 xl:gap-24">
+              <div
+                class="grid lg:grid-cols-2 items-start gap-10 lg:gap-16 xl:gap-24"
+              >
                 <!-- Texts -->
                 <div class="space-y-4 md:space-y-5 lg:space-y-6">
                   <h3>Телятники и коровники</h3>
@@ -1065,7 +1073,9 @@
             <!-- Tab content 3 -->
             <div id="tab3" class="tab-content space-y-12 lg:space-y-[3.75rem]">
               <!-- Top -->
-              <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 xl:gap-24">
+              <div
+                class="grid lg:grid-cols-2 items-start gap-10 lg:gap-16 xl:gap-24"
+              >
                 <!-- Texts -->
                 <div class="space-y-4 md:space-y-5 lg:space-y-6">
                   <h3>Телятники и коровники</h3>
@@ -2132,7 +2142,7 @@
               <img
                 src="./assets/images/img-builder.png"
                 alt="Builder image"
-                class="absolute inset-0"
+                class="w-full h-full absolute inset-0 object-cover object-right sm:object-center"
               />
               <div class="space-y-4 ralative z-20 text-white">
                 <h4>Собственный штат</h4>
@@ -2823,25 +2833,25 @@
           >
             <div style="position: relative; overflow: hidden" class="h-full">
               <a
-                href="https://yandex.com/maps/44/izhevsk/?utm_medium=mapframe&utm_source=maps"
+                href="https://yandex.com/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
                 style="
                   color: #eee;
                   font-size: 12px;
                   position: absolute;
                   top: 0px;
                 "
-                >Ижевск</a
+                >Москва</a
               ><a
-                href="https://yandex.com/maps/44/izhevsk/search/%D1%81%D1%82%D0%B0%D0%B4%D0%B8%D0%BE%D0%BD%20%D0%B7%D0%B5%D0%BD%D0%B8%D1%82%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%B1%D0%B8%D0%BB%D0%B5%D1%82%D1%8B/?ll=53.187723%2C56.843090&sctx=ZAAAAAgBEAAaKAoSCeLNGryvsEJAEYNPc%2FIi5UtAEhIJxqUqbXGNnz8R7Bfshm2Lgj8iBgABAgMEBSgKOABAvp8NSAFiHnJlbGV2X3NlcnZpY2VfYXJlYV9wZXJjZW50PTEwMGoCcnWdAc3MTD2gAQCoAQC9AZJ8D1TCAQWzrbrwA4ICM9GB0YLQsNC00LjQvtC9INC30LXQvdC40YIg0LrRg9C%2F0LjRgtGMINCx0LjQu9C10YLRi4oCAJICBjE4OTQ1NpoCDGRlc2t0b3AtbWFwc6oCFzEzOTY0MTE1MjAsMTU2NjQwMTMyNTA5&sll=53.187723%2C56.843090&sspn=0.078278%2C0.024084&utm_medium=mapframe&utm_source=maps&z=14"
+                href="https://yandex.com/maps/213/moscow/house/proyektiruyemy_proyezd_3723_vl12/Z04YcQVgSkcFQFtvfXp4eXxhZQ==/?ll=37.720322%2C55.698021&utm_medium=mapframe&utm_source=maps&z=16.42"
                 style="
                   color: #eee;
                   font-size: 12px;
                   position: absolute;
                   top: 14px;
                 "
-                >Стадион зенит купить билеты — Яндекс Карты</a
+                >Яндекс Карты — транспорт, навигация, поиск мест</a
               ><iframe
-                src="https://yandex.com/map-widget/v1/?display-text=%D1%81%D1%82%D0%B0%D0%B4%D0%B8%D0%BE%D0%BD%20%D0%B7%D0%B5%D0%BD%D0%B8%D1%82%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%B1%D0%B8%D0%BB%D0%B5%D1%82%D1%8B&ll=53.187723%2C56.843090&mode=search&sctx=ZAAAAAgBEAAaKAoSCeLNGryvsEJAEYNPc%2FIi5UtAEhIJxqUqbXGNnz8R7Bfshm2Lgj8iBgABAgMEBSgKOABAvp8NSAFiHnJlbGV2X3NlcnZpY2VfYXJlYV9wZXJjZW50PTEwMGoCcnWdAc3MTD2gAQCoAQC9AZJ8D1TCAQWzrbrwA4ICM9GB0YLQsNC00LjQvtC9INC30LXQvdC40YIg0LrRg9C%2F0LjRgtGMINCx0LjQu9C10YLRi4oCAJICBjE4OTQ1NpoCDGRlc2t0b3AtbWFwc6oCFzEzOTY0MTE1MjAsMTU2NjQwMTMyNTA5&sll=53.187723%2C56.843090&sspn=0.078278%2C0.024084&text=%D1%81%D1%82%D0%B0%D0%B4%D0%B8%D0%BE%D0%BD%20%D0%B7%D0%B5%D0%BD%D0%B8%D1%82%20%D0%BA%D1%83%D0%BF%D0%B8%D1%82%D1%8C%20%D0%B1%D0%B8%D0%BB%D0%B5%D1%82%D1%8B&z=14"
+                src="https://yandex.com/map-widget/v1/?ll=37.720322%2C55.698021&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgozMjc3MTY5NjQ3ElTQoNC-0YHRgdC40Y8sINCc0L7RgdC60LLQsCwg0J_RgNC-0LXQutGC0LjRgNGD0LXQvNGL0Lkg0L_RgNC-0LXQt9C0IOKEliAzNzIzLCDQstC7MTIiCg2b4RZCFcbKXkI%2C&z=16.42"
                 class="h-96 w-full md:h-full"
                 frameborder="1"
                 allowfullscreen="true"

@@ -141,10 +141,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Append SVG icon to selected option
         const svgIcon = `<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="16" height="16" rx="8" fill="#9AE800"/>
-            <path d="M4 7.72727L7.07692 11L12 5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M4 7.72727L7.07692 11L12 5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>`;
+        <rect width="16" height="16" rx="8" fill="#9AE800"/>
+        <path d="M4 7.72727L7.07692 11L12 5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M4 7.72727L7.07692 11L12 5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>`;
         event.target.innerHTML =
           event.target.textContent +
           (event.target.classList.contains('bg-brand-light-primary')
