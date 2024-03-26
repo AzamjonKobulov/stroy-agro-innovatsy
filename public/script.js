@@ -11,8 +11,10 @@ document.addEventListener('scroll', function () {
   const navOnScroll = document.querySelector('.nav-on-scroll');
   if (window.scrollY > 100) {
     navOnScroll.classList.remove('-translate-y-full'); // Remove the translate class
+    navOnScroll.classList.add('bg-white');
   } else {
     navOnScroll.classList.add('-translate-y-full');
+    navOnScroll.classList.remove('bg-white');
   }
 });
 
