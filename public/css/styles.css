@@ -720,9 +720,6 @@ section,
 .mt-8{
   margin-top: 2rem;
 }
-.-mt-px{
-  margin-top: -1px;
-}
 .block{
   display: block;
 }
@@ -1061,6 +1058,10 @@ section,
   --tw-bg-opacity: 1;
   background-color: rgb(31 93 70 / var(--tw-bg-opacity));
 }
+.bg-brand-primary-2{
+  --tw-bg-opacity: 1;
+  background-color: rgb(35 85 96 / var(--tw-bg-opacity));
+}
 .bg-brand-whitish{
   --tw-bg-opacity: 1;
   background-color: rgb(249 252 251 / var(--tw-bg-opacity));
@@ -1073,7 +1074,7 @@ section,
   background-color: rgb(255 255 255 / 0.1);
 }
 .bg-farm{
-  background-image: url('../assets/images/img-factory.png');
+  background-image: url('../assets/images/img-factory-4.png');
 }
 .bg-cover{
   background-size: cover;
@@ -1087,8 +1088,14 @@ section,
 .fill-brand-primary{
   fill: #1F5D46;
 }
+.fill-brand-primary-2{
+  fill: #235560;
+}
 .stroke-brand-primary{
   stroke: #1F5D46;
+}
+.stroke-brand-primary-2{
+  stroke: #235560;
 }
 .object-cover{
   -o-object-fit: cover;
@@ -1121,10 +1128,6 @@ section,
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-}
-.px-7{
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
 }
 .py-2{
   padding-top: 0.5rem;
@@ -1260,6 +1263,10 @@ section,
 .text-brand-primary{
   --tw-text-opacity: 1;
   color: rgb(31 93 70 / var(--tw-text-opacity));
+}
+.text-brand-primary-2{
+  --tw-text-opacity: 1;
+  color: rgb(35 85 96 / var(--tw-text-opacity));
 }
 .text-white{
   --tw-text-opacity: 1;
@@ -1848,14 +1855,14 @@ input[type='radio']:checked + label + svg{
     padding-right: 1.5rem;
   }
 
-  .lg\:py-12{
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
   .lg\:px-7{
     padding-left: 1.75rem;
     padding-right: 1.75rem;
+  }
+
+  .lg\:py-12{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .lg\:py-4{

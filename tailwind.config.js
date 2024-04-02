@@ -19,10 +19,12 @@ module.exports = {
       colors: {
         brand: {
           primary: '#1F5D46',
+          'primary-2': '#235560',
           green: '#235560',
           'light-primary': '#F1FCF8',
           'light-input': '#F7F9FA',
           whitish: '#F9FCFB',
+          'whitish-2': '#F7F7F7',
           dark: '#0B0B0B',
           'dark-2': '#2F2F2F',
           'light-green': '#9DDC21',
@@ -58,6 +60,7 @@ module.exports = {
       },
       backgroundImage: {
         farm: "url('../assets/images/img-factory.png')",
+        farm: "url('../assets/images/img-factory-4.png')",
         block:
           'linear-gradient(104.28deg, rgba(0, 0, 0, 0.49) 46.14%, rgba(0, 0, 0, 0.21) 77%)',
       },
