@@ -1828,20 +1828,12 @@ input[type='radio']:checked + label + svg{
     gap: 4rem;
   }
 
-  .lg\:gap-6{
-    gap: 1.5rem;
-  }
-
-  .lg\:gap-5{
-    gap: 1.25rem;
-  }
-
-  .lg\:gap-3{
-    gap: 0.75rem;
-  }
-
   .lg\:gap-4{
     gap: 1rem;
+  }
+
+  .lg\:gap-6{
+    gap: 1.5rem;
   }
 
   .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]){
@@ -2003,6 +1995,10 @@ input[type='radio']:checked + label + svg{
     justify-content: flex-start;
   }
 
+  .xl\:gap-0{
+    gap: 0px;
+  }
+
   .xl\:gap-24{
     gap: 6rem;
   }
@@ -2013,10 +2009,6 @@ input[type='radio']:checked + label + svg{
 
   .xl\:gap-8{
     gap: 2rem;
-  }
-
-  .xl\:gap-0{
-    gap: 0px;
   }
 
   .xl\:space-y-40 > :not([hidden]) ~ :not([hidden]){
